@@ -1,0 +1,2 @@
+python scripts/train_rl.py --algo ppo --init runs/main/bc_n10_s0/bc_policy.zip --log-std-init -1.0 --lr 1e-4 --warmup-steps 200000 --out runs/pilot/bcppo_n10_s0 --steps 2000000 --eval-every 250000 --n-envs 7 --device cuda
+python scripts/train_rl.py --algo ppo --init runs/main/bc_n10_s0/bc_policy.zip --log-std-init -1.0 --lr 3e-4 --warmup-steps 200000 --out runs/pilot/bcppo_n10_lr3e-4_s0 --steps 2000000 --eval-every 250000 --n-envs 7 --device cuda

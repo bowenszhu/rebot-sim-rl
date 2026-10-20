@@ -1,0 +1,2 @@
+python scripts/train_rl.py --algo ppo --steps 8000000 --eval-every 500000 --lr 3e-4 --n-envs 8 --device cuda --seed 0 --out runs/main/ppo_scratch_s0
+python scripts/train_rl.py --algo ppo --steps 8000000 --eval-every 500000 --lr 3e-4 --n-envs 8 --device cuda --seed 1 --out runs/main/ppo_scratch_s1

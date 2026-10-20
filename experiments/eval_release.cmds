@@ -1,0 +1,12 @@
+python scripts/evaluate.py --model runs/main/ppo_scratch_s0/model_last.zip --obs-noise 0 --out results/eval_release/ppo_scratch_s0.json
+python scripts/evaluate.py --model runs/main/ppo_scratch_s1/model_last.zip --obs-noise 0 --out results/eval_release/ppo_scratch_s1.json
+python scripts/evaluate.py --model runs/main/ppo_scratch_s2/model_last.zip --obs-noise 0 --out results/eval_release/ppo_scratch_s2.json
+python scripts/evaluate.py --model runs/main/bcppo_n10_s0/model_last.zip --obs-noise 0 --out results/eval_release/bcppo_n10_s0.json
+python scripts/evaluate.py --model runs/main/bcppo_n10_s1/model_last.zip --obs-noise 0 --out results/eval_release/bcppo_n10_s1.json
+python scripts/evaluate.py --model runs/main/bcppo_n10_s2/model_last.zip --obs-noise 0 --out results/eval_release/bcppo_n10_s2.json
+python scripts/evaluate.py --model runs/main/bcppo_n10_noise1cm_s0/model_last.zip --obs-noise 0 --out results/eval_release/bcppo_n10_noise1cm_s0.json
+python scripts/evaluate.py --model runs/main/bcppo_n10_noise1cm_s1/model_last.zip --obs-noise 0 --out results/eval_release/bcppo_n10_noise1cm_s1.json
+python scripts/evaluate.py --model runs/main/bcppo_n10_noise1cm_s2/model_last.zip --obs-noise 0 --out results/eval_release/bcppo_n10_noise1cm_s2.json
+python scripts/evaluate.py --model runs/main/bc_n10_s0/bc_policy.zip --obs-noise 0 --out results/eval_release/bc_n10_s0.json
+python scripts/evaluate.py --model runs/main/bc_n10_s1/bc_policy.zip --obs-noise 0 --out results/eval_release/bc_n10_s1.json
+python scripts/evaluate.py --model runs/main/bc_n10_s2/bc_policy.zip --obs-noise 0 --out results/eval_release/bc_n10_s2.json
