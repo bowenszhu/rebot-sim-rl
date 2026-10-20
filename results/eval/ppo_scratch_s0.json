@@ -1,0 +1,3117 @@
+{
+ "model": "runs/main/ppo_scratch_s0/model_last.zip",
+ "settings": [
+  {
+   "obs_noise": 0.0,
+   "summary": {
+    "successes": 2,
+    "episodes": 54,
+    "rate": 0.037037037037037035,
+    "wilson95": [
+     0.01,
+     0.125
+    ],
+    "max_stage_hist": {
+     "none": 0,
+     "grasp_low": 0,
+     "lifted": 4,
+     "in_box_held": 48,
+     "success": 2
+    },
+    "mean_return": 120.21303703703705
+   },
+   "episodes": [
+    {
+     "i": 0,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 750776423,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.829,
+     "length": 150
+    },
+    {
+     "i": 1,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 244100195,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.994,
+     "length": 150
+    },
+    {
+     "i": 2,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 846803255,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.282,
+     "length": 150
+    },
+    {
+     "i": 3,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 340116677,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.127,
+     "length": 150
+    },
+    {
+     "i": 4,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 219233270,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.581,
+     "length": 150
+    },
+    {
+     "i": 5,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 856164640,
+     "success": false,
+     "max_stage": 3,
+     "return": 113.981,
+     "length": 150
+    },
+    {
+     "i": 6,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 690076228,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.617,
+     "length": 150
+    },
+    {
+     "i": 7,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 726122923,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.859,
+     "length": 150
+    },
+    {
+     "i": 8,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 1061347011,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.182,
+     "length": 150
+    },
+    {
+     "i": 9,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 419950682,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.743,
+     "length": 150
+    },
+    {
+     "i": 10,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 901325776,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.706,
+     "length": 150
+    },
+    {
+     "i": 11,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 357356233,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.576,
+     "length": 150
+    },
+    {
+     "i": 12,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 609352039,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.871,
+     "length": 150
+    },
+    {
+     "i": 13,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 642429132,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.61,
+     "length": 150
+    },
+    {
+     "i": 14,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 228860567,
+     "success": false,
+     "max_stage": 2,
+     "return": 104.487,
+     "length": 150
+    },
+    {
+     "i": 15,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 200504305,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.177,
+     "length": 150
+    },
+    {
+     "i": 16,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 246032267,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.792,
+     "length": 150
+    },
+    {
+     "i": 17,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 722366301,
+     "success": false,
+     "max_stage": 3,
+     "return": 112.208,
+     "length": 150
+    },
+    {
+     "i": 18,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.008836057305398744,
+      -0.0050350857074085795
+     ],
+     "seed": 982379939,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.825,
+     "length": 150
+    },
+    {
+     "i": 19,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0033447490620074484,
+      -0.008082041288117759
+     ],
+     "seed": 1018853378,
+     "success": true,
+     "max_stage": 4,
+     "return": 121.132,
+     "length": 146
+    },
+    {
+     "i": 20,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0011632066766437443,
+      0.007729598386550354
+     ],
+     "seed": 508980633,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.6,
+     "length": 150
+    },
+    {
+     "i": 21,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0034705427185977578,
+      0.00467856326660133
+     ],
+     "seed": 748884993,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.467,
+     "length": 150
+    },
+    {
+     "i": 22,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.005597300889090276,
+      -0.008368108609155838
+     ],
+     "seed": 420468431,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.742,
+     "length": 150
+    },
+    {
+     "i": 23,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.003197996300905894,
+      -0.0006961369259589811
+     ],
+     "seed": 171686594,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.264,
+     "length": 150
+    },
+    {
+     "i": 24,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.004671579434184581,
+      0.006315528068496139
+     ],
+     "seed": 535444857,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.763,
+     "length": 150
+    },
+    {
+     "i": 25,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.007410618476455994,
+      -0.008166704969101282
+     ],
+     "seed": 207548270,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.799,
+     "length": 150
+    },
+    {
+     "i": 26,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.001971360273298264,
+      0.007094838087480027
+     ],
+     "seed": 701593485,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.983,
+     "length": 150
+    },
+    {
+     "i": 27,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.00863976722271967,
+      0.004495627221840401
+     ],
+     "seed": 645985889,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.398,
+     "length": 150
+    },
+    {
+     "i": 28,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.007211026347865848,
+      0.008586756031506326
+     ],
+     "seed": 581394224,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.429,
+     "length": 150
+    },
+    {
+     "i": 29,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.008753459175355138,
+      -0.00010024119842351409
+     ],
+     "seed": 586462761,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.851,
+     "length": 150
+    },
+    {
+     "i": 30,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00452453635020025,
+      -0.0009644258505047865
+     ],
+     "seed": 609919937,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.668,
+     "length": 150
+    },
+    {
+     "i": 31,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0033821813906589073,
+      0.008069080136164782
+     ],
+     "seed": 714080106,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.666,
+     "length": 150
+    },
+    {
+     "i": 32,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.004858516494469314,
+      -0.0032034332477936032
+     ],
+     "seed": 676268333,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.78,
+     "length": 150
+    },
+    {
+     "i": 33,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0028910704011142797,
+      -0.009899553325657364
+     ],
+     "seed": 277941720,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.371,
+     "length": 150
+    },
+    {
+     "i": 34,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.002572090881993574,
+      -0.004352345851497634
+     ],
+     "seed": 655981186,
+     "success": false,
+     "max_stage": 3,
+     "return": 103.229,
+     "length": 150
+    },
+    {
+     "i": 35,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0023365795451276107,
+      -0.006473473594375932
+     ],
+     "seed": 73108599,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.309,
+     "length": 150
+    },
+    {
+     "i": 36,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.003912232255608208,
+      -0.0011822637824776393
+     ],
+     "seed": 694644638,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.176,
+     "length": 150
+    },
+    {
+     "i": 37,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0056414227382913,
+      -0.00051333769332911
+     ],
+     "seed": 161278535,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.192,
+     "length": 150
+    },
+    {
+     "i": 38,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00047262289837616265,
+      -0.004895352923609994
+     ],
+     "seed": 130284565,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.495,
+     "length": 150
+    },
+    {
+     "i": 39,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.004418657603724667,
+      -0.004788415750174049
+     ],
+     "seed": 319508273,
+     "success": false,
+     "max_stage": 2,
+     "return": 98.007,
+     "length": 150
+    },
+    {
+     "i": 40,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00034476814401368516,
+      -0.0057604192729697875
+     ],
+     "seed": 652487557,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.982,
+     "length": 150
+    },
+    {
+     "i": 41,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.005074773483385249,
+      0.006769653049338895
+     ],
+     "seed": 532179300,
+     "success": false,
+     "max_stage": 2,
+     "return": 103.69,
+     "length": 150
+    },
+    {
+     "i": 42,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.006397388198099299,
+      0.007243125830184729
+     ],
+     "seed": 542278394,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.537,
+     "length": 150
+    },
+    {
+     "i": 43,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0050106266387448814,
+      0.002222408076611304
+     ],
+     "seed": 191447571,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.032,
+     "length": 150
+    },
+    {
+     "i": 44,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0058168993014278535,
+      0.005197448422479905
+     ],
+     "seed": 359470627,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.29,
+     "length": 150
+    },
+    {
+     "i": 45,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.00828856536026884,
+      0.002361134446361819
+     ],
+     "seed": 267641498,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.513,
+     "length": 150
+    },
+    {
+     "i": 46,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0007393666206467109,
+      0.0026905342243055143
+     ],
+     "seed": 105937640,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.526,
+     "length": 150
+    },
+    {
+     "i": 47,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.005036710202870951,
+      0.0036964596927879833
+     ],
+     "seed": 187232773,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.051,
+     "length": 150
+    },
+    {
+     "i": 48,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.008382567074981851,
+      0.007501472015122523
+     ],
+     "seed": 744329849,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.091,
+     "length": 150
+    },
+    {
+     "i": 49,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.002367883907947557,
+      -0.003737889916297603
+     ],
+     "seed": 460307087,
+     "success": true,
+     "max_stage": 4,
+     "return": 130.453,
+     "length": 29
+    },
+    {
+     "i": 50,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.006420742894142648,
+      -0.009805757444090948
+     ],
+     "seed": 312665861,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.558,
+     "length": 150
+    },
+    {
+     "i": 51,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.007400013575433042,
+      0.009456596047951174
+     ],
+     "seed": 225531909,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.818,
+     "length": 150
+    },
+    {
+     "i": 52,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0011641531361779522,
+      -0.002425010103814933
+     ],
+     "seed": 508265575,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.48,
+     "length": 150
+    },
+    {
+     "i": 53,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.009322082184688836,
+      -0.008835947894683121
+     ],
+     "seed": 296295922,
+     "success": false,
+     "max_stage": 2,
+     "return": 99.715,
+     "length": 150
+    }
+   ]
+  },
+  {
+   "obs_noise": 0.005,
+   "summary": {
+    "successes": 0,
+    "episodes": 54,
+    "rate": 0.0,
+    "wilson95": [
+     0.0,
+     0.066
+    ],
+    "max_stage_hist": {
+     "none": 0,
+     "grasp_low": 0,
+     "lifted": 6,
+     "in_box_held": 48,
+     "success": 0
+    },
+    "mean_return": 118.96496296296299
+   },
+   "episodes": [
+    {
+     "i": 0,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 750776423,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.531,
+     "length": 150
+    },
+    {
+     "i": 1,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 244100195,
+     "success": false,
+     "max_stage": 3,
+     "return": 117.875,
+     "length": 150
+    },
+    {
+     "i": 2,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 846803255,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.172,
+     "length": 150
+    },
+    {
+     "i": 3,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 340116677,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.0,
+     "length": 150
+    },
+    {
+     "i": 4,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 219233270,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.595,
+     "length": 150
+    },
+    {
+     "i": 5,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 856164640,
+     "success": false,
+     "max_stage": 2,
+     "return": 102.761,
+     "length": 150
+    },
+    {
+     "i": 6,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 690076228,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.768,
+     "length": 150
+    },
+    {
+     "i": 7,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 726122923,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.881,
+     "length": 150
+    },
+    {
+     "i": 8,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 1061347011,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.106,
+     "length": 150
+    },
+    {
+     "i": 9,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 419950682,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.808,
+     "length": 150
+    },
+    {
+     "i": 10,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 901325776,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.729,
+     "length": 150
+    },
+    {
+     "i": 11,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 357356233,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.459,
+     "length": 150
+    },
+    {
+     "i": 12,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 609352039,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.362,
+     "length": 150
+    },
+    {
+     "i": 13,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 642429132,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.736,
+     "length": 150
+    },
+    {
+     "i": 14,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 228860567,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.166,
+     "length": 150
+    },
+    {
+     "i": 15,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 200504305,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.659,
+     "length": 150
+    },
+    {
+     "i": 16,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 246032267,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.598,
+     "length": 150
+    },
+    {
+     "i": 17,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 722366301,
+     "success": false,
+     "max_stage": 2,
+     "return": 99.876,
+     "length": 150
+    },
+    {
+     "i": 18,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.008836057305398744,
+      -0.0050350857074085795
+     ],
+     "seed": 982379939,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.518,
+     "length": 150
+    },
+    {
+     "i": 19,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0033447490620074484,
+      -0.008082041288117759
+     ],
+     "seed": 1018853378,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.567,
+     "length": 150
+    },
+    {
+     "i": 20,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0011632066766437443,
+      0.007729598386550354
+     ],
+     "seed": 508980633,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.177,
+     "length": 150
+    },
+    {
+     "i": 21,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0034705427185977578,
+      0.00467856326660133
+     ],
+     "seed": 748884993,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.758,
+     "length": 150
+    },
+    {
+     "i": 22,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.005597300889090276,
+      -0.008368108609155838
+     ],
+     "seed": 420468431,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.494,
+     "length": 150
+    },
+    {
+     "i": 23,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.003197996300905894,
+      -0.0006961369259589811
+     ],
+     "seed": 171686594,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.307,
+     "length": 150
+    },
+    {
+     "i": 24,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.004671579434184581,
+      0.006315528068496139
+     ],
+     "seed": 535444857,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.963,
+     "length": 150
+    },
+    {
+     "i": 25,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.007410618476455994,
+      -0.008166704969101282
+     ],
+     "seed": 207548270,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.284,
+     "length": 150
+    },
+    {
+     "i": 26,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.001971360273298264,
+      0.007094838087480027
+     ],
+     "seed": 701593485,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.175,
+     "length": 150
+    },
+    {
+     "i": 27,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.00863976722271967,
+      0.004495627221840401
+     ],
+     "seed": 645985889,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.107,
+     "length": 150
+    },
+    {
+     "i": 28,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.007211026347865848,
+      0.008586756031506326
+     ],
+     "seed": 581394224,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.348,
+     "length": 150
+    },
+    {
+     "i": 29,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.008753459175355138,
+      -0.00010024119842351409
+     ],
+     "seed": 586462761,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.025,
+     "length": 150
+    },
+    {
+     "i": 30,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00452453635020025,
+      -0.0009644258505047865
+     ],
+     "seed": 609919937,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.927,
+     "length": 150
+    },
+    {
+     "i": 31,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0033821813906589073,
+      0.008069080136164782
+     ],
+     "seed": 714080106,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.903,
+     "length": 150
+    },
+    {
+     "i": 32,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.004858516494469314,
+      -0.0032034332477936032
+     ],
+     "seed": 676268333,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.772,
+     "length": 150
+    },
+    {
+     "i": 33,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0028910704011142797,
+      -0.009899553325657364
+     ],
+     "seed": 277941720,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.329,
+     "length": 150
+    },
+    {
+     "i": 34,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.002572090881993574,
+      -0.004352345851497634
+     ],
+     "seed": 655981186,
+     "success": false,
+     "max_stage": 3,
+     "return": 110.713,
+     "length": 150
+    },
+    {
+     "i": 35,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0023365795451276107,
+      -0.006473473594375932
+     ],
+     "seed": 73108599,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.082,
+     "length": 150
+    },
+    {
+     "i": 36,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.003912232255608208,
+      -0.0011822637824776393
+     ],
+     "seed": 694644638,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.969,
+     "length": 150
+    },
+    {
+     "i": 37,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0056414227382913,
+      -0.00051333769332911
+     ],
+     "seed": 161278535,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.756,
+     "length": 150
+    },
+    {
+     "i": 38,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00047262289837616265,
+      -0.004895352923609994
+     ],
+     "seed": 130284565,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.343,
+     "length": 150
+    },
+    {
+     "i": 39,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.004418657603724667,
+      -0.004788415750174049
+     ],
+     "seed": 319508273,
+     "success": false,
+     "max_stage": 2,
+     "return": 99.727,
+     "length": 150
+    },
+    {
+     "i": 40,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00034476814401368516,
+      -0.0057604192729697875
+     ],
+     "seed": 652487557,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.934,
+     "length": 150
+    },
+    {
+     "i": 41,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.005074773483385249,
+      0.006769653049338895
+     ],
+     "seed": 532179300,
+     "success": false,
+     "max_stage": 2,
+     "return": 100.155,
+     "length": 150
+    },
+    {
+     "i": 42,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.006397388198099299,
+      0.007243125830184729
+     ],
+     "seed": 542278394,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.648,
+     "length": 150
+    },
+    {
+     "i": 43,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0050106266387448814,
+      0.002222408076611304
+     ],
+     "seed": 191447571,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.313,
+     "length": 150
+    },
+    {
+     "i": 44,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0058168993014278535,
+      0.005197448422479905
+     ],
+     "seed": 359470627,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.194,
+     "length": 150
+    },
+    {
+     "i": 45,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.00828856536026884,
+      0.002361134446361819
+     ],
+     "seed": 267641498,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.415,
+     "length": 150
+    },
+    {
+     "i": 46,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0007393666206467109,
+      0.0026905342243055143
+     ],
+     "seed": 105937640,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.115,
+     "length": 150
+    },
+    {
+     "i": 47,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.005036710202870951,
+      0.0036964596927879833
+     ],
+     "seed": 187232773,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.842,
+     "length": 150
+    },
+    {
+     "i": 48,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.008382567074981851,
+      0.007501472015122523
+     ],
+     "seed": 744329849,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.899,
+     "length": 150
+    },
+    {
+     "i": 49,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.002367883907947557,
+      -0.003737889916297603
+     ],
+     "seed": 460307087,
+     "success": false,
+     "max_stage": 2,
+     "return": 63.653,
+     "length": 150
+    },
+    {
+     "i": 50,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.006420742894142648,
+      -0.009805757444090948
+     ],
+     "seed": 312665861,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.474,
+     "length": 150
+    },
+    {
+     "i": 51,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.007400013575433042,
+      0.009456596047951174
+     ],
+     "seed": 225531909,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.832,
+     "length": 150
+    },
+    {
+     "i": 52,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0011641531361779522,
+      -0.002425010103814933
+     ],
+     "seed": 508265575,
+     "success": false,
+     "max_stage": 2,
+     "return": 107.319,
+     "length": 150
+    },
+    {
+     "i": 53,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.009322082184688836,
+      -0.008835947894683121
+     ],
+     "seed": 296295922,
+     "success": false,
+     "max_stage": 3,
+     "return": 118.989,
+     "length": 150
+    }
+   ]
+  },
+  {
+   "obs_noise": 0.01,
+   "summary": {
+    "successes": 0,
+    "episodes": 54,
+    "rate": 0.0,
+    "wilson95": [
+     0.0,
+     0.066
+    ],
+    "max_stage_hist": {
+     "none": 0,
+     "grasp_low": 1,
+     "lifted": 4,
+     "in_box_held": 49,
+     "success": 0
+    },
+    "mean_return": 117.58333333333331
+   },
+   "episodes": [
+    {
+     "i": 0,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 750776423,
+     "success": false,
+     "max_stage": 1,
+     "return": 9.266,
+     "length": 150
+    },
+    {
+     "i": 1,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 244100195,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.614,
+     "length": 150
+    },
+    {
+     "i": 2,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 846803255,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.112,
+     "length": 150
+    },
+    {
+     "i": 3,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 340116677,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.893,
+     "length": 150
+    },
+    {
+     "i": 4,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 219233270,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.624,
+     "length": 150
+    },
+    {
+     "i": 5,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 856164640,
+     "success": false,
+     "max_stage": 2,
+     "return": 103.803,
+     "length": 150
+    },
+    {
+     "i": 6,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 690076228,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.316,
+     "length": 150
+    },
+    {
+     "i": 7,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 726122923,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.23,
+     "length": 150
+    },
+    {
+     "i": 8,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 1061347011,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.086,
+     "length": 150
+    },
+    {
+     "i": 9,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 419950682,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.633,
+     "length": 150
+    },
+    {
+     "i": 10,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 901325776,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.742,
+     "length": 150
+    },
+    {
+     "i": 11,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 357356233,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.616,
+     "length": 150
+    },
+    {
+     "i": 12,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 609352039,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.292,
+     "length": 150
+    },
+    {
+     "i": 13,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 642429132,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.604,
+     "length": 150
+    },
+    {
+     "i": 14,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 228860567,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.03,
+     "length": 150
+    },
+    {
+     "i": 15,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 200504305,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.741,
+     "length": 150
+    },
+    {
+     "i": 16,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 246032267,
+     "success": false,
+     "max_stage": 2,
+     "return": 103.261,
+     "length": 150
+    },
+    {
+     "i": 17,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 722366301,
+     "success": false,
+     "max_stage": 3,
+     "return": 101.713,
+     "length": 150
+    },
+    {
+     "i": 18,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.008836057305398744,
+      -0.0050350857074085795
+     ],
+     "seed": 982379939,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.202,
+     "length": 150
+    },
+    {
+     "i": 19,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0033447490620074484,
+      -0.008082041288117759
+     ],
+     "seed": 1018853378,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.117,
+     "length": 150
+    },
+    {
+     "i": 20,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0011632066766437443,
+      0.007729598386550354
+     ],
+     "seed": 508980633,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.979,
+     "length": 150
+    },
+    {
+     "i": 21,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0034705427185977578,
+      0.00467856326660133
+     ],
+     "seed": 748884993,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.805,
+     "length": 150
+    },
+    {
+     "i": 22,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.005597300889090276,
+      -0.008368108609155838
+     ],
+     "seed": 420468431,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.346,
+     "length": 150
+    },
+    {
+     "i": 23,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.003197996300905894,
+      -0.0006961369259589811
+     ],
+     "seed": 171686594,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.286,
+     "length": 150
+    },
+    {
+     "i": 24,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.004671579434184581,
+      0.006315528068496139
+     ],
+     "seed": 535444857,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.951,
+     "length": 150
+    },
+    {
+     "i": 25,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.007410618476455994,
+      -0.008166704969101282
+     ],
+     "seed": 207548270,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.47,
+     "length": 150
+    },
+    {
+     "i": 26,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.001971360273298264,
+      0.007094838087480027
+     ],
+     "seed": 701593485,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.349,
+     "length": 150
+    },
+    {
+     "i": 27,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.00863976722271967,
+      0.004495627221840401
+     ],
+     "seed": 645985889,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.755,
+     "length": 150
+    },
+    {
+     "i": 28,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.007211026347865848,
+      0.008586756031506326
+     ],
+     "seed": 581394224,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.448,
+     "length": 150
+    },
+    {
+     "i": 29,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.008753459175355138,
+      -0.00010024119842351409
+     ],
+     "seed": 586462761,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.68,
+     "length": 150
+    },
+    {
+     "i": 30,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00452453635020025,
+      -0.0009644258505047865
+     ],
+     "seed": 609919937,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.403,
+     "length": 150
+    },
+    {
+     "i": 31,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0033821813906589073,
+      0.008069080136164782
+     ],
+     "seed": 714080106,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.63,
+     "length": 150
+    },
+    {
+     "i": 32,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.004858516494469314,
+      -0.0032034332477936032
+     ],
+     "seed": 676268333,
+     "success": false,
+     "max_stage": 2,
+     "return": 103.837,
+     "length": 150
+    },
+    {
+     "i": 33,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0028910704011142797,
+      -0.009899553325657364
+     ],
+     "seed": 277941720,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.298,
+     "length": 150
+    },
+    {
+     "i": 34,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.002572090881993574,
+      -0.004352345851497634
+     ],
+     "seed": 655981186,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.637,
+     "length": 150
+    },
+    {
+     "i": 35,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0023365795451276107,
+      -0.006473473594375932
+     ],
+     "seed": 73108599,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.412,
+     "length": 150
+    },
+    {
+     "i": 36,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.003912232255608208,
+      -0.0011822637824776393
+     ],
+     "seed": 694644638,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.003,
+     "length": 150
+    },
+    {
+     "i": 37,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0056414227382913,
+      -0.00051333769332911
+     ],
+     "seed": 161278535,
+     "success": false,
+     "max_stage": 3,
+     "return": 118.604,
+     "length": 150
+    },
+    {
+     "i": 38,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00047262289837616265,
+      -0.004895352923609994
+     ],
+     "seed": 130284565,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.283,
+     "length": 150
+    },
+    {
+     "i": 39,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.004418657603724667,
+      -0.004788415750174049
+     ],
+     "seed": 319508273,
+     "success": false,
+     "max_stage": 3,
+     "return": 99.528,
+     "length": 150
+    },
+    {
+     "i": 40,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00034476814401368516,
+      -0.0057604192729697875
+     ],
+     "seed": 652487557,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.549,
+     "length": 150
+    },
+    {
+     "i": 41,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.005074773483385249,
+      0.006769653049338895
+     ],
+     "seed": 532179300,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.067,
+     "length": 150
+    },
+    {
+     "i": 42,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.006397388198099299,
+      0.007243125830184729
+     ],
+     "seed": 542278394,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.542,
+     "length": 150
+    },
+    {
+     "i": 43,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0050106266387448814,
+      0.002222408076611304
+     ],
+     "seed": 191447571,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.604,
+     "length": 150
+    },
+    {
+     "i": 44,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0058168993014278535,
+      0.005197448422479905
+     ],
+     "seed": 359470627,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.977,
+     "length": 150
+    },
+    {
+     "i": 45,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.00828856536026884,
+      0.002361134446361819
+     ],
+     "seed": 267641498,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.614,
+     "length": 150
+    },
+    {
+     "i": 46,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0007393666206467109,
+      0.0026905342243055143
+     ],
+     "seed": 105937640,
+     "success": false,
+     "max_stage": 3,
+     "return": 105.703,
+     "length": 150
+    },
+    {
+     "i": 47,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.005036710202870951,
+      0.0036964596927879833
+     ],
+     "seed": 187232773,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.982,
+     "length": 150
+    },
+    {
+     "i": 48,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.008382567074981851,
+      0.007501472015122523
+     ],
+     "seed": 744329849,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.401,
+     "length": 150
+    },
+    {
+     "i": 49,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.002367883907947557,
+      -0.003737889916297603
+     ],
+     "seed": 460307087,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.858,
+     "length": 150
+    },
+    {
+     "i": 50,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.006420742894142648,
+      -0.009805757444090948
+     ],
+     "seed": 312665861,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.334,
+     "length": 150
+    },
+    {
+     "i": 51,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.007400013575433042,
+      0.009456596047951174
+     ],
+     "seed": 225531909,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.901,
+     "length": 150
+    },
+    {
+     "i": 52,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0011641531361779522,
+      -0.002425010103814933
+     ],
+     "seed": 508265575,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.686,
+     "length": 150
+    },
+    {
+     "i": 53,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.009322082184688836,
+      -0.008835947894683121
+     ],
+     "seed": 296295922,
+     "success": false,
+     "max_stage": 2,
+     "return": 100.683,
+     "length": 150
+    }
+   ]
+  },
+  {
+   "obs_noise": 0.02,
+   "summary": {
+    "successes": 2,
+    "episodes": 54,
+    "rate": 0.037037037037037035,
+    "wilson95": [
+     0.01,
+     0.125
+    ],
+    "max_stage_hist": {
+     "none": 0,
+     "grasp_low": 4,
+     "lifted": 4,
+     "in_box_held": 44,
+     "success": 2
+    },
+    "mean_return": 110.5955925925926
+   },
+   "episodes": [
+    {
+     "i": 0,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 750776423,
+     "success": false,
+     "max_stage": 1,
+     "return": 13.16,
+     "length": 150
+    },
+    {
+     "i": 1,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 244100195,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.167,
+     "length": 150
+    },
+    {
+     "i": 2,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 846803255,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.464,
+     "length": 150
+    },
+    {
+     "i": 3,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 340116677,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.724,
+     "length": 150
+    },
+    {
+     "i": 4,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 219233270,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.236,
+     "length": 150
+    },
+    {
+     "i": 5,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 856164640,
+     "success": false,
+     "max_stage": 2,
+     "return": 106.049,
+     "length": 150
+    },
+    {
+     "i": 6,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 690076228,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.063,
+     "length": 150
+    },
+    {
+     "i": 7,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 726122923,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.669,
+     "length": 150
+    },
+    {
+     "i": 8,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 1061347011,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.109,
+     "length": 150
+    },
+    {
+     "i": 9,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 419950682,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.826,
+     "length": 150
+    },
+    {
+     "i": 10,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 901325776,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.417,
+     "length": 150
+    },
+    {
+     "i": 11,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 357356233,
+     "success": true,
+     "max_stage": 4,
+     "return": 127.572,
+     "length": 123
+    },
+    {
+     "i": 12,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 609352039,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.047,
+     "length": 150
+    },
+    {
+     "i": 13,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 642429132,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.815,
+     "length": 150
+    },
+    {
+     "i": 14,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 228860567,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.689,
+     "length": 150
+    },
+    {
+     "i": 15,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 200504305,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.375,
+     "length": 150
+    },
+    {
+     "i": 16,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 246032267,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.316,
+     "length": 150
+    },
+    {
+     "i": 17,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0,
+      0.0
+     ],
+     "seed": 722366301,
+     "success": false,
+     "max_stage": 3,
+     "return": 118.132,
+     "length": 150
+    },
+    {
+     "i": 18,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.008836057305398744,
+      -0.0050350857074085795
+     ],
+     "seed": 982379939,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.062,
+     "length": 150
+    },
+    {
+     "i": 19,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0033447490620074484,
+      -0.008082041288117759
+     ],
+     "seed": 1018853378,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.392,
+     "length": 150
+    },
+    {
+     "i": 20,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0011632066766437443,
+      0.007729598386550354
+     ],
+     "seed": 508980633,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.829,
+     "length": 150
+    },
+    {
+     "i": 21,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0034705427185977578,
+      0.00467856326660133
+     ],
+     "seed": 748884993,
+     "success": false,
+     "max_stage": 1,
+     "return": 10.396,
+     "length": 150
+    },
+    {
+     "i": 22,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.005597300889090276,
+      -0.008368108609155838
+     ],
+     "seed": 420468431,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.977,
+     "length": 150
+    },
+    {
+     "i": 23,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.003197996300905894,
+      -0.0006961369259589811
+     ],
+     "seed": 171686594,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.486,
+     "length": 150
+    },
+    {
+     "i": 24,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.004671579434184581,
+      0.006315528068496139
+     ],
+     "seed": 535444857,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.33,
+     "length": 150
+    },
+    {
+     "i": 25,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.007410618476455994,
+      -0.008166704969101282
+     ],
+     "seed": 207548270,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.097,
+     "length": 150
+    },
+    {
+     "i": 26,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.001971360273298264,
+      0.007094838087480027
+     ],
+     "seed": 701593485,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.315,
+     "length": 150
+    },
+    {
+     "i": 27,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.00863976722271967,
+      0.004495627221840401
+     ],
+     "seed": 645985889,
+     "success": false,
+     "max_stage": 3,
+     "return": 100.317,
+     "length": 150
+    },
+    {
+     "i": 28,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.007211026347865848,
+      0.008586756031506326
+     ],
+     "seed": 581394224,
+     "success": false,
+     "max_stage": 2,
+     "return": 106.935,
+     "length": 150
+    },
+    {
+     "i": 29,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.008753459175355138,
+      -0.00010024119842351409
+     ],
+     "seed": 586462761,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.655,
+     "length": 150
+    },
+    {
+     "i": 30,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00452453635020025,
+      -0.0009644258505047865
+     ],
+     "seed": 609919937,
+     "success": false,
+     "max_stage": 3,
+     "return": 118.715,
+     "length": 150
+    },
+    {
+     "i": 31,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0033821813906589073,
+      0.008069080136164782
+     ],
+     "seed": 714080106,
+     "success": false,
+     "max_stage": 3,
+     "return": 117.711,
+     "length": 150
+    },
+    {
+     "i": 32,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.004858516494469314,
+      -0.0032034332477936032
+     ],
+     "seed": 676268333,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.389,
+     "length": 150
+    },
+    {
+     "i": 33,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0028910704011142797,
+      -0.009899553325657364
+     ],
+     "seed": 277941720,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.198,
+     "length": 150
+    },
+    {
+     "i": 34,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.002572090881993574,
+      -0.004352345851497634
+     ],
+     "seed": 655981186,
+     "success": false,
+     "max_stage": 2,
+     "return": 104.429,
+     "length": 150
+    },
+    {
+     "i": 35,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0023365795451276107,
+      -0.006473473594375932
+     ],
+     "seed": 73108599,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.591,
+     "length": 150
+    },
+    {
+     "i": 36,
+     "cell": "A1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.003912232255608208,
+      -0.0011822637824776393
+     ],
+     "seed": 694644638,
+     "success": false,
+     "max_stage": 1,
+     "return": 8.325,
+     "length": 150
+    },
+    {
+     "i": 37,
+     "cell": "A1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.0056414227382913,
+      -0.00051333769332911
+     ],
+     "seed": 161278535,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.755,
+     "length": 150
+    },
+    {
+     "i": 38,
+     "cell": "A2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00047262289837616265,
+      -0.004895352923609994
+     ],
+     "seed": 130284565,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.193,
+     "length": 150
+    },
+    {
+     "i": 39,
+     "cell": "A2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.004418657603724667,
+      -0.004788415750174049
+     ],
+     "seed": 319508273,
+     "success": false,
+     "max_stage": 3,
+     "return": 117.745,
+     "length": 150
+    },
+    {
+     "i": 40,
+     "cell": "A3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.00034476814401368516,
+      -0.0057604192729697875
+     ],
+     "seed": 652487557,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.086,
+     "length": 150
+    },
+    {
+     "i": 41,
+     "cell": "A3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.005074773483385249,
+      0.006769653049338895
+     ],
+     "seed": 532179300,
+     "success": true,
+     "max_stage": 4,
+     "return": 73.706,
+     "length": 149
+    },
+    {
+     "i": 42,
+     "cell": "B1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.006397388198099299,
+      0.007243125830184729
+     ],
+     "seed": 542278394,
+     "success": false,
+     "max_stage": 1,
+     "return": 9.564,
+     "length": 150
+    },
+    {
+     "i": 43,
+     "cell": "B1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.0050106266387448814,
+      0.002222408076611304
+     ],
+     "seed": 191447571,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.186,
+     "length": 150
+    },
+    {
+     "i": 44,
+     "cell": "B2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0058168993014278535,
+      0.005197448422479905
+     ],
+     "seed": 359470627,
+     "success": false,
+     "max_stage": 3,
+     "return": 121.894,
+     "length": 150
+    },
+    {
+     "i": 45,
+     "cell": "B2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.00828856536026884,
+      0.002361134446361819
+     ],
+     "seed": 267641498,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.674,
+     "length": 150
+    },
+    {
+     "i": 46,
+     "cell": "B3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      0.0007393666206467109,
+      0.0026905342243055143
+     ],
+     "seed": 105937640,
+     "success": false,
+     "max_stage": 3,
+     "return": 123.749,
+     "length": 150
+    },
+    {
+     "i": 47,
+     "cell": "B3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      -0.005036710202870951,
+      0.0036964596927879833
+     ],
+     "seed": 187232773,
+     "success": false,
+     "max_stage": 3,
+     "return": 124.495,
+     "length": 150
+    },
+    {
+     "i": 48,
+     "cell": "C1",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.008382567074981851,
+      0.007501472015122523
+     ],
+     "seed": 744329849,
+     "success": false,
+     "max_stage": 3,
+     "return": 119.723,
+     "length": 150
+    },
+    {
+     "i": 49,
+     "cell": "C1",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.002367883907947557,
+      -0.003737889916297603
+     ],
+     "seed": 460307087,
+     "success": false,
+     "max_stage": 3,
+     "return": 118.375,
+     "length": 150
+    },
+    {
+     "i": 50,
+     "cell": "C2",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.006420742894142648,
+      -0.009805757444090948
+     ],
+     "seed": 312665861,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.453,
+     "length": 150
+    },
+    {
+     "i": 51,
+     "cell": "C2",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.007400013575433042,
+      0.009456596047951174
+     ],
+     "seed": 225531909,
+     "success": false,
+     "max_stage": 3,
+     "return": 122.646,
+     "length": 150
+    },
+    {
+     "i": 52,
+     "cell": "C3",
+     "yaw_deg": 0.0,
+     "jitter_m": [
+      -0.0011641531361779522,
+      -0.002425010103814933
+     ],
+     "seed": 508265575,
+     "success": false,
+     "max_stage": 3,
+     "return": 120.117,
+     "length": 150
+    },
+    {
+     "i": 53,
+     "cell": "C3",
+     "yaw_deg": 45.0,
+     "jitter_m": [
+      0.009322082184688836,
+      -0.008835947894683121
+     ],
+     "seed": 296295922,
+     "success": false,
+     "max_stage": 2,
+     "return": 81.822,
+     "length": 150
+    }
+   ]
+  }
+ ]
+}

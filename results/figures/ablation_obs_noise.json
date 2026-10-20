@@ -1,0 +1,110 @@
+{
+ "BC -> PPO, train \u03c3 = 0": {
+  "0cm": {
+   "successes": 161,
+   "episodes": 162,
+   "wilson95": [
+    0.966,
+    0.999
+   ],
+   "per_seed_rate": [
+    1.0,
+    1.0,
+    0.981
+   ]
+  },
+  "0.5cm": {
+   "successes": 161,
+   "episodes": 162,
+   "wilson95": [
+    0.966,
+    0.999
+   ],
+   "per_seed_rate": [
+    1.0,
+    1.0,
+    0.981
+   ]
+  },
+  "1cm": {
+   "successes": 158,
+   "episodes": 162,
+   "wilson95": [
+    0.938,
+    0.99
+   ],
+   "per_seed_rate": [
+    0.981,
+    0.963,
+    0.981
+   ]
+  },
+  "2cm": {
+   "successes": 161,
+   "episodes": 162,
+   "wilson95": [
+    0.966,
+    0.999
+   ],
+   "per_seed_rate": [
+    1.0,
+    0.981,
+    1.0
+   ]
+  }
+ },
+ "BC -> PPO, train \u03c3 = 1 cm": {
+  "0cm": {
+   "successes": 123,
+   "episodes": 162,
+   "wilson95": [
+    0.688,
+    0.819
+   ],
+   "per_seed_rate": [
+    1.0,
+    0.278,
+    1.0
+   ]
+  },
+  "0.5cm": {
+   "successes": 124,
+   "episodes": 162,
+   "wilson95": [
+    0.695,
+    0.824
+   ],
+   "per_seed_rate": [
+    1.0,
+    0.296,
+    1.0
+   ]
+  },
+  "1cm": {
+   "successes": 126,
+   "episodes": 162,
+   "wilson95": [
+    0.708,
+    0.835
+   ],
+   "per_seed_rate": [
+    0.981,
+    0.352,
+    1.0
+   ]
+  },
+  "2cm": {
+   "successes": 122,
+   "episodes": 162,
+   "wilson95": [
+    0.681,
+    0.813
+   ],
+   "per_seed_rate": [
+    0.963,
+    0.315,
+    0.981
+   ]
+  }
+ }
+}

@@ -1,0 +1,1 @@
+Pilot with reward version 1 (before the v2 change); config.json predates the --reward-version flag. Stopped at ~1.1M steps by hand.

@@ -1,0 +1,16 @@
+{
+ "algo": "ppo",
+ "out": "runs/pilot_v2/ppo_scratch_s0",
+ "steps": "4000000",
+ "seed": "0",
+ "n_envs": "12",
+ "init": "None",
+ "lr": "0.0003",
+ "log_std_init": "0.0",
+ "warmup_steps": "0",
+ "ent_coef": "0.0",
+ "obs_noise": "0.0",
+ "reward_version": "2",
+ "eval_every": "250000",
+ "device": "cpu"
+}

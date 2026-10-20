@@ -1,0 +1,17 @@
+{
+ "PPO from scratch, reward v1 (pilot)": {
+  "runs": [
+   "runs/pilot_reward_v1/ppo_scratch_s0"
+  ],
+  "final_eval": [
+   {
+    "timesteps": 750000.0,
+    "successes": 0.0,
+    "episodes": 54.0,
+    "rate": 0.0,
+    "mean_return": 42.54,
+    "wall_s": 629.3
+   }
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "BC (10 demos) -> PPO, reward v3 (careful success only)": {
+  "runs": [
+   "results/runs/main/bcppo_n10_v3_s0",
+   "results/runs/main/bcppo_n10_v3_s1",
+   "results/runs/main/bcppo_n10_v3_s2"
+  ],
+  "final_eval": [
+   {
+    "timesteps": 3000320.0,
+    "successes": 1.0,
+    "episodes": 54.0,
+    "rate": 0.0185,
+    "mean_return": 110.894,
+    "wall_s": 3671.7
+   },
+   {
+    "timesteps": 3000320.0,
+    "successes": 7.0,
+    "episodes": 54.0,
+    "rate": 0.1296,
+    "mean_return": 104.52,
+    "wall_s": 3683.8
+   },
+   {
+    "timesteps": 3000320.0,
+    "successes": 7.0,
+    "episodes": 54.0,
+    "rate": 0.1296,
+    "mean_return": 99.931,
+    "wall_s": 3650.7
+   }
+  ]
+ }
+}

@@ -1,0 +1,202 @@
+{
+ "per_run": [
+  {
+   "n_demos": 5,
+   "seed": 0,
+   "k": 0,
+   "N": 54,
+   "stages": {
+    "none": 23,
+    "grasp_low": 11,
+    "lifted": 19,
+    "in_box_held": 1,
+    "success": 0
+   }
+  },
+  {
+   "n_demos": 5,
+   "seed": 1,
+   "k": 1,
+   "N": 54,
+   "stages": {
+    "none": 20,
+    "grasp_low": 14,
+    "lifted": 14,
+    "in_box_held": 5,
+    "success": 1
+   }
+  },
+  {
+   "n_demos": 5,
+   "seed": 2,
+   "k": 0,
+   "N": 54,
+   "stages": {
+    "none": 27,
+    "grasp_low": 13,
+    "lifted": 10,
+    "in_box_held": 4,
+    "success": 0
+   }
+  },
+  {
+   "n_demos": 10,
+   "seed": 0,
+   "k": 0,
+   "N": 54,
+   "stages": {
+    "none": 0,
+    "grasp_low": 0,
+    "lifted": 45,
+    "in_box_held": 9,
+    "success": 0
+   }
+  },
+  {
+   "n_demos": 10,
+   "seed": 1,
+   "k": 0,
+   "N": 54,
+   "stages": {
+    "none": 0,
+    "grasp_low": 8,
+    "lifted": 40,
+    "in_box_held": 6,
+    "success": 0
+   }
+  },
+  {
+   "n_demos": 10,
+   "seed": 2,
+   "k": 0,
+   "N": 54,
+   "stages": {
+    "none": 0,
+    "grasp_low": 3,
+    "lifted": 38,
+    "in_box_held": 13,
+    "success": 0
+   }
+  },
+  {
+   "n_demos": 20,
+   "seed": 0,
+   "k": 44,
+   "N": 54,
+   "stages": {
+    "none": 0,
+    "grasp_low": 0,
+    "lifted": 10,
+    "in_box_held": 0,
+    "success": 44
+   }
+  },
+  {
+   "n_demos": 20,
+   "seed": 1,
+   "k": 35,
+   "N": 54,
+   "stages": {
+    "none": 0,
+    "grasp_low": 5,
+    "lifted": 14,
+    "in_box_held": 0,
+    "success": 35
+   }
+  },
+  {
+   "n_demos": 20,
+   "seed": 2,
+   "k": 32,
+   "N": 54,
+   "stages": {
+    "none": 0,
+    "grasp_low": 3,
+    "lifted": 18,
+    "in_box_held": 1,
+    "success": 32
+   }
+  },
+  {
+   "n_demos": 50,
+   "seed": 0,
+   "k": 54,
+   "N": 54,
+   "stages": {
+    "none": 0,
+    "grasp_low": 0,
+    "lifted": 0,
+    "in_box_held": 0,
+    "success": 54
+   }
+  },
+  {
+   "n_demos": 50,
+   "seed": 1,
+   "k": 41,
+   "N": 54,
+   "stages": {
+    "none": 1,
+    "grasp_low": 4,
+    "lifted": 7,
+    "in_box_held": 1,
+    "success": 41
+   }
+  },
+  {
+   "n_demos": 50,
+   "seed": 2,
+   "k": 51,
+   "N": 54,
+   "stages": {
+    "none": 0,
+    "grasp_low": 0,
+    "lifted": 3,
+    "in_box_held": 0,
+    "success": 51
+   }
+  }
+ ],
+ "pooled": [
+  {
+   "n_demos": 5,
+   "successes": 1,
+   "episodes": 162,
+   "rate": 0.006172839506172839,
+   "wilson95": [
+    0.001,
+    0.034
+   ]
+  },
+  {
+   "n_demos": 10,
+   "successes": 0,
+   "episodes": 162,
+   "rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.023
+   ]
+  },
+  {
+   "n_demos": 20,
+   "successes": 111,
+   "episodes": 162,
+   "rate": 0.6851851851851852,
+   "wilson95": [
+    0.61,
+    0.752
+   ]
+  },
+  {
+   "n_demos": 50,
+   "successes": 146,
+   "episodes": 162,
+   "rate": 0.9012345679012346,
+   "wilson95": [
+    0.846,
+    0.938
+   ]
+  }
+ ]
+}

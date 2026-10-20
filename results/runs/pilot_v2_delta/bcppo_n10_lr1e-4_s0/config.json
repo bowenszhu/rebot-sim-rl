@@ -1,0 +1,16 @@
+{
+ "algo": "ppo",
+ "out": "runs/pilot_v2/bcppo_n10_lr1e-4_s0",
+ "steps": "2000000",
+ "seed": "0",
+ "n_envs": "5",
+ "init": "runs/main/bc_n10_s0/bc_policy.zip",
+ "lr": "0.0001",
+ "log_std_init": "-1.0",
+ "warmup_steps": "200000",
+ "ent_coef": "0.0",
+ "obs_noise": "0.0",
+ "reward_version": "2",
+ "eval_every": "250000",
+ "device": "cuda"
+}
