@@ -16,10 +16,10 @@ Source profile: `b601_px6d_w2l_wide_open_20261016_08` (sha256 `13accacde2be`)
 ## FK consistency against recorded T1 grasps
 
 - Episodes with a detectable grasp: 40
-- TCP-to-planned-cell xy error: median 2.3 cm, p90 3.4 cm, max 5.6 cm (cell positions themselves are +-2 cm; the die is placed +-1 cm)
+- TCP-to-planned-cell xy error: median 2.3 cm, p90 3.4 cm, max 5.6 cm (cell positions themselves are +-2 cm; the cube is placed +-1 cm)
 - Fingertip height at grasp: median 1.8 cm (range 0.7 to 2.6); the table is z = 0
 - Tool axis tilt from vertical at grasp: median 12 deg
-- Finger gap while holding the 6 cm die (linear J7 map): median 4.8 cm (range 3.6 to 6.0)
+- Finger gap while holding the 6 cm cube (linear J7 map): median 4.8 cm (range 3.6 to 6.0)
 - Recorded samples outside the sim joint ranges by > 0.02 rad: 0 / 13536
 
 | episode | cell | yaw | xy error cm | fingertip z cm | tilt deg | hold gap cm |

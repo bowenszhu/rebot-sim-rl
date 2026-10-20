@@ -1,7 +1,7 @@
 # rebot-sim-rl: RL and imitation in a MuJoCo twin of the reBot B601-RS T1 task
 
 State-based reinforcement learning, behaviour cloning, and BC→RL fine-tuning on a
-simulated version of the real-robot task *T1: pick up the ~6 cm blue foam die and
+simulated version of the real-robot task *T1: pick up the ~6 cm blue foam cube and
 place it in the white lunch box* (reBot `t1_pick_place_v1`). Everything here is
 **simulation only**. None of these policies has been run on the real arm.
 
@@ -11,7 +11,7 @@ All numbers: deterministic policy, **54 fixed T1 starts** per checkpoint (9 mat
 points × yaw {0°, 45°} × 3 placement jitters), 3 training seeds per condition,
 pooled counts with 95% Wilson intervals. Reward version 2 unless noted.
 
-| Policy | Env steps | Success (die in box, released) | Careful placement* |
+| Policy | Env steps | Success (cube in box, released) | Careful placement* |
 |---|---|---|---|
 | Scripted IK expert (privileged) | – | 54/54 | 48/54 |
 | BC, 10 scripted demos | – | **0/162** (0–2%) | 0/162 |
@@ -20,9 +20,9 @@ pooled counts with 95% Wilson intervals. Reward version 2 unless noted.
 | BC → PPO, train obs noise 1 cm (ablation) | 3M | 123/162 (76%, 69–82%); seeds 54, 15, 54 | 29/162 (18%) |
 | BC → PPO, reward v3 (only careful placement counts) | 3M | 25/162 (15%, 11–22%); seeds 2, 10, 13 | 12/162 (7%, 4–13%) |
 
-\*Careful placement: at release the die centre is ≤ 8 cm high (its bottom about at
+\*Careful placement: at release the cube centre is ≤ 8 cm high (its bottom about at
 the 4.5 cm box rim) and moves horizontally ≤ 0.2 m/s. The real T1 protocol lowers
-the die into the box before opening.
+the cube into the box before opening.
 
 ![evaluation success](results/figures/main_eval_success.png)
 
@@ -37,20 +37,20 @@ What the experiments show:
    climbed from 12 to 68 per episode in 1M steps at 0% success: it learned to grasp
    and hold, because the transport term was flat far from the box
    (`results/figures/pilot_reward_v1_*.png`). Even with v2, scratch PPO spends
-   millions of steps carrying the die to the box and holding it there; releasing
+   millions of steps carrying the cube to the box and holding it there; releasing
    costs the grasp and transport reward before the success bonus arrives.
    Training return and success are plotted separately
    (`main_train_return.png`, `main_train_success.png`, `main_eval_success.png`).
 3. **The success metric was gamed.** Reward-v2 policies let go while still moving,
    from up to 20 cm (median 8.9 cm): BC→PPO's 161/162 "successes" contain only 13 careful
-   placements. The success test only checks where the die ends up.
+   placements. The success test only checks where the cube ends up.
    **Tightening the success test alone did not fix it.** Reward v3 (same shaping,
    success and its bonus only for a careful placement) removed the shortcut but
-   BC→PPO then mostly carried the die and held it: 12/162 careful placements after
+   BC→PPO then mostly carried the cube and held it: 12/162 careful placements after
    3M steps, no better than v2 (`results/figures/v3_*.png`). A shaping term for
    lowering into the box mouth (or demos that do it) is the next thing to try;
    not done here.
-4. **Domain-randomisation ablation (single factor: die-position observation noise,
+4. **Domain-randomisation ablation (single factor: cube-position observation noise,
    i.i.d. Gaussian per step) found no benefit.** Policies fine-tuned without noise
    kept 158–161/162 at evaluation noise up to σ = 2 cm; training with σ = 1 cm did
    not improve that and one of its three seeds did not converge (15/54). The
@@ -64,8 +64,8 @@ What the experiments show:
    0/162, 20 demos 111/162, 50 demos 146/162 (`results/figures/bc_scaling.png`).
 
 Failure modes (`results/videos/`, first failures of each model at σ = 0):
-scratch PPO holding the die inside the box mouth without releasing (top), BC
-carrying the die to the box but never opening (middle); bottom: a BC→PPO "success"
+scratch PPO holding the cube inside the box mouth without releasing (top), BC
+carrying the cube to the box but never opening (middle); bottom: a BC→PPO "success"
 that lets go while still moving.
 
 ![failure modes](results/figures/failure_modes.png)
@@ -106,9 +106,9 @@ exceeded its time limit.
 | Arm | upstream B601-RS MJCF kinematics, inertias and meshes; joint ranges clipped to the real software limits of control profile 08 (relative to the profile reference zero) | B601-RS, profile `b601_px6d_w2l_wide_open_20261016_08` |
 | Tool | primitive PX6D + R8 + W2L model: 24 cm flange-to-fingertip, parallel gap 0–8.4 cm, 30 N grip limit | PX6D-75 + R8 + two DM-Tac W2L fingers, 24 cm (tape), 8.4 cm max gap |
 | Control | 10 Hz Cartesian delta (2 cm, 0.15 rad yaw) → damped-least-squares IK → joint targets (limit-clipped, 1 rad/s) → force-limited joint PD with gravity compensation | 50 Hz joint-position mirror of a leader arm (teleop); policies output joint positions at 30 Hz |
-| Observation | 38-d state: joints, TCP pose, die pose, box offset, finger contacts, last action | two RGB cameras + joint state (no die pose) |
-| Starts | die anywhere in the 9-point mat frame (±1.5 cm), yaw 0–90°; evaluation on the 9 printed points × yaw {0°, 45°} × 3 placement jitters (±1 cm) = **54 fixed episodes** | same 9 points × yaw {0°, 45°} |
-| Success | die centre inside the box's inner footprint, below 6 cm, not touched by the fingers | die in the box and released |
+| Observation | 38-d state: joints, TCP pose, cube pose, box offset, finger contacts, last action | two RGB cameras + joint state (no cube pose) |
+| Starts | cube anywhere in the 9-point mat frame (±1.5 cm), yaw 0–90°; evaluation on the 9 printed points × yaw {0°, 45°} × 3 placement jitters (±1 cm) = **54 fixed episodes** | same 9 points × yaw {0°, 45°} |
+| Success | cube centre inside the box's inner footprint, below 6 cm, not touched by the fingers | cube in the box and released |
 
 Positions come from the measured T1 layout (mat 12 cm to the arm's left, cross
 ~40 cm forward, box centre ~(38, −22) cm), see `configs/t1_layout.json`.
@@ -119,7 +119,7 @@ Replaying the joint traces of 40 recorded real T1 demonstrations through the sim
 kinematics (offline, read-only):
 
 - At the moment the operator starts closing the gripper, the simulated TCP lies a
-  median **2.3 cm** (p90 3.4 cm) from the planned die cell. The cells themselves are
+  median **2.3 cm** (p90 3.4 cm) from the planned cube cell. The cells themselves are
   only known to about ±2 cm, so this bounds rather than measures the model error.
 - The simulated fingertip is **0.7–2.6 cm above the table** at those grasps (median
   1.8 cm): joint zeros, signs and the 24 cm tool length are consistent.
@@ -128,21 +128,21 @@ kinematics (offline, read-only):
   with the real J4 lower limit (−1.365 rad) a vertical tool is infeasible over most
   of the workspace, so the sim IK also tilts the tool outward (12° at table height,
   more when higher).
-- The finger gap while holding the 6 cm die maps to a median 4.75 cm with the
+- The finger gap while holding the 6 cm cube maps to a median 4.75 cm with the
   linear J7 calibration: either the foam is squeezed or the near-closed gap is not
   zero (profile 08 notes it may not be). Unresolved; see `sim2real/PROTOCOL.md`.
 
 ### MDP details
 
 - Reward (version 2, dense, ≤ 1 per step): reach 0.2 · (1 − tanh 10d), grasp +0.2,
-  lift +0.1, transport +0.4 · (1 − tanh 3d) toward a point 10 cm above the box, die
+  lift +0.1, transport +0.4 · (1 − tanh 3d) toward a point 10 cm above the box, cube
   in box 0.9. Success ends the episode and pays 1 per remaining step, so finishing
   early is never worse than holding a high-reward state.
-- 150 steps (15 s) per episode; termination on success or if the die leaves the table area.
+- 150 steps (15 s) per episode; termination on success or if the cube leaves the table area.
 - Version 1 of the reward used a transport term 1 − tanh 5d (flat about 40 cm from
   the box) and no lift term; it is kept as `--reward-version 1` for the pilot below.
 - Version 3 (`--reward-version 3`) keeps the v2 shaping but grants success only for a
-  careful placement (die centre ≤ 8 cm and horizontal speed ≤ 0.2 m/s at release).
+  careful placement (cube centre ≤ 8 cm and horizontal speed ≤ 0.2 m/s at release).
 
 ## Reproduce
 
@@ -171,10 +171,10 @@ see `results/libero/RUNS.md`.
 
 ## Limitations
 
-- **Simulation is not the real robot.** The tool and die are boxes; foam
-  compliance, die mass and friction are guesses; there is no camera, no
+- **Simulation is not the real robot.** The tool and cube are boxes; foam
+  compliance, cube mass and friction are guesses; there is no camera, no
   latency and no leader-arm teleoperation; the controller is an ideal joint PD.
-  The sim policies see the true die pose, which the real robot does not have.
+  The sim policies see the true cube pose, which the real robot does not have.
 - **Different action interface.** The sim agent acts through Cartesian deltas and
   IK; the real policies output joint positions. Only joint-space kinematics have
   been checked against the real arm (above), not dynamics or contact.

@@ -5,8 +5,8 @@
    kinematically in the sim model. At each grasp (gripper starts closing after its
    largest opening) the simulated fingertip position is compared with the planned
    cube cell, and the tool axis with the vertical.
-3. Gripper mapping: the J7 reading while holding the 6 cm die is converted to a
-   finger gap with the linear profile-08 mapping and compared with the die size.
+3. Gripper mapping: the J7 reading while holding the 6 cm cube is converted to a
+   finger gap with the linear profile-08 mapping and compared with the cube size.
 4. Fraction of recorded samples outside the sim joint ranges.
 
 Writes results/model_check/{model_check.json, model_check.md}.
@@ -86,7 +86,7 @@ def main():
                                  "max": float(tipz.max())},
         "grasp_tool_tilt_deg": {"median": float(np.median(tilt)), "max": float(tilt.max())},
         "hold_gap_cm": {"median": float(np.median(gap)), "min": float(gap.min()), "max": float(gap.max()),
-                        "expected": "~6 cm die (soft, can be squeezed)"},
+                        "expected": "~6 cm cube (soft, can be squeezed)"},
     }
     (args.out / "model_check.json").write_text(json.dumps({"summary": summary, "grasps": rows}, indent=1))
 
@@ -101,12 +101,12 @@ def main():
               f"- Episodes with a detectable grasp: {len(rows)}",
               f"- TCP-to-planned-cell xy error: median {summary['grasp_xy_error_cm']['median']:.1f} cm, "
               f"p90 {summary['grasp_xy_error_cm']['p90']:.1f} cm, max {summary['grasp_xy_error_cm']['max']:.1f} cm "
-              "(cell positions themselves are +-2 cm; the die is placed +-1 cm)",
+              "(cell positions themselves are +-2 cm; the cube is placed +-1 cm)",
               f"- Fingertip height at grasp: median {summary['grasp_fingertip_z_cm']['median']:.1f} cm "
               f"(range {summary['grasp_fingertip_z_cm']['min']:.1f} to {summary['grasp_fingertip_z_cm']['max']:.1f}); "
               "the table is z = 0",
               f"- Tool axis tilt from vertical at grasp: median {summary['grasp_tool_tilt_deg']['median']:.0f} deg",
-              f"- Finger gap while holding the 6 cm die (linear J7 map): median {summary['hold_gap_cm']['median']:.1f} cm "
+              f"- Finger gap while holding the 6 cm cube (linear J7 map): median {summary['hold_gap_cm']['median']:.1f} cm "
               f"(range {summary['hold_gap_cm']['min']:.1f} to {summary['hold_gap_cm']['max']:.1f})",
               f"- Recorded samples outside the sim joint ranges by > 0.02 rad: {outside} / {total}", "",
               "| episode | cell | yaw | xy error cm | fingertip z cm | tilt deg | hold gap cm |",

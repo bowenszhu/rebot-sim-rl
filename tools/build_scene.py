@@ -17,7 +17,7 @@ J1-J6 axes and meshes, is kept unchanged):
      MuJoCo position actuators (PD, force-limited to the upstream ctrlrange) with
      actuator gravity compensation, i.e. the same structure as the upstream
      physics-mode sync (tau = bias + kp*(q*-q) - kd*qd, clipped).
-  4. A table (base mounted on the table surface, z = 0), the 6 cm foam die and the
+  4. A table (base mounted on the table surface, z = 0), the 6 cm foam cube and the
      open lunch box are placed at the positions measured for the real T1 setup.
 """
 import argparse
@@ -134,7 +134,7 @@ def build(limits: dict, layout: dict) -> str:
     ET.SubElement(wb, "geom", name="desk_mat", type="box", size="0.148 0.21 0.0005",
                   pos=f"{gx:.3f} {gy:.3f} 0.0005", material="mat_white",
                   contype="0", conaffinity="0", group="1")
-    # Foam die: 6 cm, light, moderately high friction (foam)
+    # Foam cube: 6 cm, light, moderately high friction (foam)
     cube = layout["cube"]
     cb = ET.SubElement(wb, "body", name="cube", pos=f"{gx:.3f} {gy:.3f} {cube['half'] + 0.001:.4f}")
     ET.SubElement(cb, "freejoint", name="cube_free")

@@ -1,6 +1,6 @@
 """Fixed-seed evaluation of a saved policy, optionally under perturbations, with videos.
 
-  # nominal + robustness sweep over die-position observation noise
+  # nominal + robustness sweep over cube-position observation noise
   python scripts/evaluate.py --model runs/x/model_last.zip --obs-noise 0 0.005 0.01 0.02 \
       --out results/eval/x.json
   # save failure (and a few success) videos
@@ -36,7 +36,7 @@ def main():
     ap.add_argument("--model", type=Path, required=True)
     ap.add_argument("--obs-noise", type=float, nargs="+", default=[0.0])
     ap.add_argument("--friction", type=float, nargs="*", default=None,
-                    help="optional die friction values to sweep at zero obs noise")
+                    help="optional cube friction values to sweep at zero obs noise")
     ap.add_argument("--reps", type=int, default=EVAL_REPS)
     ap.add_argument("--out", type=Path)
     ap.add_argument("--videos", type=Path, default=None)

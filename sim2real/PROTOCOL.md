@@ -14,7 +14,7 @@ the gripper force, or a learned policy.
 
 What is already known offline (`results/model_check/model_check.md`): replaying 40
 recorded T1 grasps through the sim kinematics puts the TCP within a median 2.3 cm
-(p90 3.4 cm) of the planned die cell, with the fingertip 0.7–2.6 cm above the table.
+(p90 3.4 cm) of the planned cube cell, with the fingertip 0.7–2.6 cm above the table.
 The planned cells themselves are only known to about ±2 cm, so this bounds but does
 not measure the model error. The touch-point check below replaces the planned cells
 with tape-measured points.
@@ -69,7 +69,7 @@ table height, in that order.
 ## Optional step 4 — gripper gap map
 
 The offline check found a median 4.75 cm finger gap (linear J7 map) while holding
-the 6 cm foam die. To separate foam compression from map error, close the fingers
+the 6 cm foam cube. To separate foam compression from map error, close the fingers
 on rigid blocks of 2, 4 and 6 cm and record J7 raw for each (read-only, gripper
 only, inside a normal mirror episode). Fit `gap = a (raw - ref) + b` and update
 `configs/real_limits.json` if it differs.

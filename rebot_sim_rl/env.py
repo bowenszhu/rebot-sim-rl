@@ -1,6 +1,6 @@
 """Gymnasium environment: B601-RS T1 pick-and-place in MuJoCo (state observations).
 
-Task (aligned with reBot t1_pick_place_v1): pick the ~6 cm blue die from the mat
+Task (aligned with reBot t1_pick_place_v1): pick the ~6 cm blue cube from the mat
 grid and release it inside the open lunch box.
 
 MDP
@@ -12,20 +12,20 @@ MDP
                  pointing down) into joint position targets, which are clipped to
                  the real software limits and rate-limited (1 rad/s), then tracked
                  by force-limited joint PD servos (position actuators).
-  observation    38-d state vector (joint state, TCP, die pose, box offset,
-                 contacts, previous action); die position optionally noisy.
+  observation    38-d state vector (joint state, TCP, cube pose, box offset,
+                 contacts, previous action); cube position optionally noisy.
   reward         dense, staged, per-step max 1 (version 2, the default):
                  reach 0.2, grasp +0.2, lift +0.1, transport +0.4 (1 - tanh(3 d)),
-                 die inside box 0.9; success ends the episode with 1.0 for each
+                 cube inside box 0.9; success ends the episode with 1.0 for each
                  remaining step (equivalent to an absorbing max-reward state, so the
                  agent is never paid for delaying success). Version 1 (first pilot)
                  had no lift term and a transport term 1 - tanh(5 d) that is flat
                  ~0.4 m from the box; PPO then learned to grasp and hold (README).
                  Version 3 keeps the v2 shaping but counts success only for a careful
                  release (see CAREFUL_RELEASE_*): v2 policies let go while moving.
-  success        die centre inside the box's inner footprint, below 6 cm height,
+  success        cube centre inside the box's inner footprint, below 6 cm height,
                  not touched by either finger.
-  termination    success, or die knocked > 0.6 m from the workspace centre.
+  termination    success, or cube knocked > 0.6 m from the workspace centre.
   truncation     150 steps (15 s).
 """
 from __future__ import annotations
@@ -48,7 +48,7 @@ TILT_DEG_AT_TABLE = 12.0
 TILT_DEG_PER_M = 80.0
 TILT_DEG_MAX = 28.0
 # Careful placement (reward v3 success condition, also reported by the evaluation):
-# at the last release the die centre is at most 8 cm high (bottom ~at the 4.5 cm rim)
+# at the last release the cube centre is at most 8 cm high (bottom ~at the 4.5 cm rim)
 # and moves horizontally at most 0.2 m/s. The scripted expert releases at a median
 # 4.3 cm / 0.08 m/s; reward-v2 policies released while still moving, from up to 14 cm.
 CAREFUL_RELEASE_MAX_Z = 0.08
@@ -82,7 +82,7 @@ def target_rotation(pos, yaw):
 
 
 def fold90(a):
-    """Fold an angle to [-pi/4, pi/4) (the die is symmetric under 90 deg)."""
+    """Fold an angle to [-pi/4, pi/4) (the cube is symmetric under 90 deg)."""
     return (a + np.pi / 4) % (np.pi / 2) - np.pi / 4
 
 
@@ -235,7 +235,7 @@ class B601T1Env(gym.Env):
         self.ever_grasped = False
         self.max_stage = 0
         self.holding = False
-        self.release = None  # (die centre z, horizontal speed) at the most recent release
+        self.release = None  # (cube centre z, horizontal speed) at the most recent release
         return self._obs(), self._info(False)
 
     def step(self, action):
@@ -266,7 +266,7 @@ class B601T1Env(gym.Env):
         self.holding = (self.holding or grasped) and (left or right)
         success = self.in_box(cube) and not (left or right)
         if self.reward_version >= 3 and success:
-            # v3: only a careful placement counts (the T1 protocol lowers the die before release)
+            # v3: only a careful placement counts (the T1 protocol lowers the cube before release)
             success = self.careful_release()
         d_reach = np.linalg.norm(self.tcp_pos() - cube)
         r = 0.2 * (1 - math.tanh(10 * d_reach))

@@ -1,6 +1,6 @@
-"""Scripted IK expert for T1-sim (uses privileged true die pose).
+"""Scripted IK expert for T1-sim (uses privileged true cube pose).
 
-Phases: approach above die -> descend -> close -> lift -> carry above box
+Phases: approach above cube -> descend -> close -> lift -> carry above box
 (rotating the finger axis to the box long side, as in the real protocol) ->
 lower -> open -> retreat. Outputs actions in the env's action space so the same
 trajectories can be used for behaviour cloning.
@@ -47,7 +47,7 @@ class ScriptedExpert:
         if self.grasp_yaw is None:
             self.grasp_yaw = e.tcp_yaw() + fold90(e.cube_yaw() - e.tcp_yaw())
         ph = self.phase
-        if ph == 0:  # above die, open, aligned
+        if ph == 0:  # above cube, open, aligned
             tgt = np.array([cube[0], cube[1], 0.12])
             a = self._move(tgt, self.grasp_yaw, OPEN)
             if np.linalg.norm(tgt - tcp) < 0.012 and abs(wrap(self.grasp_yaw - e.tcp_yaw())) < 0.05 and e.gap() > 0.07:

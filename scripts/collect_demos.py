@@ -1,6 +1,6 @@
 """Collect scripted-IK demonstrations on the training start distribution.
 
-The expert sees the true die pose. Labels are the clean expert actions; the
+The expert sees the true cube pose. Labels are the clean expert actions; the
 executed action can be perturbed (DART-style) to widen state coverage. Only
 successful episodes are kept, like the accepted real T1 demos.
 """

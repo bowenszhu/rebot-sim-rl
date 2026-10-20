@@ -1,4 +1,4 @@
-"""Single-factor ablation: success vs evaluation-time die-position noise.
+"""Single-factor ablation: success vs evaluation-time cube-position noise.
 
 Reads results/eval/<group>_s<seed>.json written by scripts/evaluate.py and pools the
 seeds of each group (same 54 starts and noise sequences per setting).
@@ -60,7 +60,7 @@ def main():
         table[label] = {f"{x * 100:g}cm": {"successes": agg[x][0], "episodes": agg[x][1],
                                            "wilson95": [round(v, 3) for v in wilson(*agg[x])],
                                            "per_seed_rate": [round(r, 3) for r in per_seed[x]]} for x in xs}
-    ax.set_xlabel("die-position observation noise at evaluation, σ (cm)", color=INK2)
+    ax.set_xlabel("cube-position observation noise at evaluation, σ (cm)", color=INK2)
     ax.set_ylabel("success rate", color=INK2)
     ax.set_ylim(-0.03, 1.05)
     ax.set_title("Robustness to perception noise: train σ = 0 vs 1 cm", color=INK, loc="left", fontsize=9)

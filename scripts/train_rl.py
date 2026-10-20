@@ -81,7 +81,7 @@ def main():
     ap.add_argument("--log-std-init", type=float, default=0.0)
     ap.add_argument("--warmup-steps", type=int, default=0, help="critic-only updates before the actor trains")
     ap.add_argument("--ent-coef", type=float, default=0.0)
-    ap.add_argument("--obs-noise", type=float, default=0.0, help="train-time die position obs noise (m)")
+    ap.add_argument("--obs-noise", type=float, default=0.0, help="train-time cube position obs noise (m)")
     ap.add_argument("--reward-version", type=int, default=2)
     ap.add_argument("--eval-every", type=int, default=250_000)
     ap.add_argument("--device", default="auto")

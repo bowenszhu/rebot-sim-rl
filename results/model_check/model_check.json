@@ -21,7 +21,7 @@
    "median": 4.75,
    "min": 3.58,
    "max": 6.05,
-   "expected": "~6 cm die (soft, can be squeezed)"
+   "expected": "~6 cm cube (soft, can be squeezed)"
   }
  },
  "grasps": [
