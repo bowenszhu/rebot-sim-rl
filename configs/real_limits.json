@@ -1,0 +1,141 @@
+{
+ "source_profile": "b601_px6d_w2l_wide_open_20261016_08",
+ "source_profile_sha256": "13accacde2be4218f6c6456f4aaad1b911e047ba3dbbbb89dc0d2d702e143e54",
+ "note": "relative = raw - reference_raw_rad; sim_range = intersection(upstream MJCF, real relative)",
+ "joints": {
+  "joint1": {
+   "reference_raw_rad": -0.005624585784971714,
+   "real_limits_raw_rad": [
+    -2.53,
+    2.53
+   ],
+   "real_limits_relative_rad": [
+    -2.5244,
+    2.5356
+   ],
+   "upstream_mjcf_range_rad": [
+    -2.8,
+    2.8
+   ],
+   "sim_range_rad": [
+    -2.5244,
+    2.5356
+   ],
+   "limit_basis": "inherited_native_software_limits_not_mechanical_stop_measurement"
+  },
+  "joint2": {
+   "reference_raw_rad": -0.015425045974552631,
+   "real_limits_raw_rad": [
+    -0.018575548797845842,
+    2.96
+   ],
+   "real_limits_relative_rad": [
+    -0.0032,
+    2.9754
+   ],
+   "upstream_mjcf_range_rad": [
+    -0.2,
+    3.14
+   ],
+   "sim_range_rad": [
+    -0.0032,
+    2.9754
+   ],
+   "limit_basis": "candidate_envelope_includes_operator_reference_below_inherited_lower_bound"
+  },
+  "joint3": {
+   "reference_raw_rad": 0.007179896114394069,
+   "real_limits_raw_rad": [
+    -0.007667209625244141,
+    3.5
+   ],
+   "real_limits_relative_rad": [
+    -0.0148,
+    3.4928
+   ],
+   "upstream_mjcf_range_rad": [
+    -0.2,
+    3.14
+   ],
+   "sim_range_rad": [
+    -0.0148,
+    3.14
+   ],
+   "limit_basis": "inherited_native_software_limits_not_mechanical_stop_measurement"
+  },
+  "joint4": {
+   "reference_raw_rad": -0.025195647031068802,
+   "real_limits_raw_rad": [
+    -1.39,
+    1.57
+   ],
+   "real_limits_relative_rad": [
+    -1.3648,
+    1.5952
+   ],
+   "upstream_mjcf_range_rad": [
+    -1.57,
+    1.57
+   ],
+   "sim_range_rad": [
+    -1.3648,
+    1.57
+   ],
+   "limit_basis": "inherited_native_software_limits_not_mechanical_stop_measurement"
+  },
+  "joint5": {
+   "reference_raw_rad": -0.0001533985196147114,
+   "real_limits_raw_rad": [
+    -1.57,
+    1.57
+   ],
+   "real_limits_relative_rad": [
+    -1.5698,
+    1.5702
+   ],
+   "upstream_mjcf_range_rad": [
+    -1.57,
+    1.57
+   ],
+   "sim_range_rad": [
+    -1.5698,
+    1.57
+   ],
+   "limit_basis": "inherited_native_software_limits_not_mechanical_stop_measurement"
+  },
+  "joint6": {
+   "reference_raw_rad": -2.1014771461486816,
+   "real_limits_raw_rad": [
+    -3.671477146148682,
+    -0.5314771461486816
+   ],
+   "real_limits_relative_rad": [
+    -1.57,
+    1.57
+   ],
+   "upstream_mjcf_range_rad": [
+    -3.14,
+    3.14
+   ],
+   "sim_range_rad": [
+    -1.57,
+    1.57
+   ],
+   "limit_basis": "operator_confirmed_unchanged_relative_range_about_new_reference"
+  }
+ },
+ "gripper": {
+  "j7_reference_raw_rad": 1.1952779293060303,
+  "j7_limits_raw_rad": [
+   1.1952779293060303,
+   5.93
+  ],
+  "manual_max_raw_rad": 6.06739,
+  "manual_max_gap_m": 0.084,
+  "mapping": "gap_m ~= 0.084 * (raw - reference) / (6.06739 - reference); linear estimate from profile 08 limit_basis",
+  "sim_gap_range_m": [
+   0.0,
+   0.084
+  ]
+ }
+}

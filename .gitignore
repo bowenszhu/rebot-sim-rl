@@ -1,0 +1,9 @@
+# STL meshes (63 MB): fetched from the public upstream repository with tools/fetch_meshes.sh
+assets/b601/meshes/
+# training outputs; curated results are copied to results/
+/runs/
+/scratch/
+data/demos/
+__pycache__/
+*.pyc
+/local/

@@ -1,0 +1,17 @@
+name: rebot-sim-rl
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy<2.3
+  - matplotlib
+  - pandas
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - torch==2.7.1  # cu128 build: needed for the Blackwell laptop GPU (sm_120)
+      - mujoco==3.3.7
+      - gymnasium==1.2.1
+      - stable-baselines3==2.7.0
+      - imageio[ffmpeg]==2.37.0
+      - pyyaml

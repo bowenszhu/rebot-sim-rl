@@ -1,0 +1,10 @@
+{
+ "source": "reBot experiments/il_vla_benchmark/t1_protocol.json mat.lateral_offset.actual_setup_20261015 (MJCF FK of pilot dwell poses, +-2 cm) and container_cm",
+ "frame": "B601 base frame: x forward, +y = arm's left, z up; base on the table surface (z = 0)",
+ "grid_corners_xy": {"A1": [0.340, 0.211], "A3": [0.354, 0.041], "C1": [0.442, 0.196], "C3": [0.456, 0.044]},
+ "grid_center_xy": [0.398, 0.123],
+ "cube": {"half": 0.03, "mass": 0.02, "friction": 1.0, "note": "~6 cm foam die; mass and friction not measured (assumed)"},
+ "box": {"center_xy": [0.38, -0.22], "long_axis_deg": 60.0, "outer_l": 0.195, "outer_w": 0.103,
+         "height": 0.045, "wall": 0.005,
+         "note": "centre from the pilot reach check (~(38,-22) cm); long side perpendicular to the base->box line (nominal protocol rule); inner depth 4.0 cm"}
+}
