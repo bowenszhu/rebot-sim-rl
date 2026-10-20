@@ -150,7 +150,7 @@ kinematics (offline, read-only):
 conda env create -f environment.yml          # torch cu128 build for the RTX PRO 2000 (sm_120)
 tools/fetch_meshes.sh                       # STL meshes from the public upstream repo, sha256-checked
 export PYTHONPATH=$PWD
-python tools/build_scene.py                 # regenerate assets/b601/b601_t1_scene.xml
+python tools/build_scene.py                 # regenerate assets/b601/b601_t1_scene.xml (draws the real end effector from assets/b601/tool_visual)
 python scripts/check_model.py               # sim kinematics vs the recorded real joint traces in data/
 bash experiments/bc_scaling.sh              # demos + BC, 4 demo counts x 3 seeds
 # PPO / BC->PPO / ablation: one line per run in experiments/main_j*.cmds

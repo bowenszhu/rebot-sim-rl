@@ -37,8 +37,24 @@
     <material name="rs_wordmark_black_mat" rgba="0.010 0.012 0.011 1" specular="0.04" shininess="0.04" metallic="0.00" roughness="0.76" />
     <material name="rs_anodized_silver_mat" rgba="0.720 0.760 0.730 1" specular="0.72" shininess="0.90" metallic="0.88" roughness="0.18" />
     <material name="rs_seeed_green_mat" rgba="0.725 0.835 0.118 1" specular="0.22" shininess="0.26" metallic="0.18" roughness="0.34" />
-    <texture type="2d" name="wood" builtin="flat" rgb1="0.55 0.42 0.30" width="64" height="64" />
-    <material name="table_mat" texture="wood" rgba="0.75 0.62 0.48 1" />
+    <mesh name="tool_vis_finger_left_finger_cnc" file="../tool_visual/finger_left_finger_cnc.stl" />
+    <mesh name="tool_vis_finger_left_finger_connector" file="../tool_visual/finger_left_finger_connector.stl" />
+    <mesh name="tool_vis_finger_left_finger_w2l" file="../tool_visual/finger_left_finger_w2l.stl" />
+    <mesh name="tool_vis_finger_right_finger_cnc" file="../tool_visual/finger_right_finger_cnc.stl" />
+    <mesh name="tool_vis_finger_right_finger_connector" file="../tool_visual/finger_right_finger_connector.stl" />
+    <mesh name="tool_vis_finger_right_finger_w2l" file="../tool_visual/finger_right_finger_w2l.stl" />
+    <mesh name="tool_vis_tool_d405_camera" file="../tool_visual/tool_d405_camera.stl" />
+    <mesh name="tool_vis_tool_d405_mount" file="../tool_visual/tool_d405_mount.stl" />
+    <mesh name="tool_vis_tool_gripper_cnc" file="../tool_visual/tool_gripper_cnc.stl" />
+    <mesh name="tool_vis_tool_gripper_green" file="../tool_visual/tool_gripper_green.stl" />
+    <mesh name="tool_vis_tool_gripper_motor" file="../tool_visual/tool_gripper_motor.stl" />
+    <mesh name="tool_vis_tool_plate_a" file="../tool_visual/tool_plate_a.stl" />
+    <mesh name="tool_vis_tool_plate_b" file="../tool_visual/tool_plate_b.stl" />
+    <mesh name="tool_vis_tool_px6d" file="../tool_visual/tool_px6d.stl" />
+    <mesh name="tool_vis_tool_screws" file="../tool_visual/tool_screws.stl" />
+    <mesh name="tool_vis_tool_stator" file="../tool_visual/tool_stator.stl" />
+    <texture type="skybox" builtin="gradient" rgb1="0.94 0.95 0.94" rgb2="0.80 0.83 0.85" width="256" height="1536" />
+    <material name="table_mat" rgba="0.55 0.58 0.61 1" specular="0.1" shininess="0.1" />
     <material name="mat_white" rgba="0.95 0.95 0.95 1" />
     <material name="cube_blue" rgba="0.10 0.30 0.85 1" />
     <material name="box_white" rgba="0.92 0.92 0.88 1" />
@@ -87,25 +103,40 @@
                 <body name="link6" pos="0.0365 0 0.048" quat="0.7071055 0 0.7071081 0" gravcomp="1">
                   <joint name="joint6" type="hinge" axis="0 0 -1" limited="true" range="-1.5700 1.5700" damping="2.0" frictionloss="0.1" actuatorgravcomp="true" />
                   <inertial pos="0.000018 0 0.0043481" mass="0.03" fullinertia="0.0000044227 0.0000043719 0.000008543 0 0.0000000002 0" />
-                  <geom pos="0 0 0" group="1" contype="0" conaffinity="0" material="rs_motor_black_mat" type="mesh" mesh="link6" />
                   <geom pos="0 0 0" rgba="0 0 0 0" group="3" contype="1" conaffinity="1" type="mesh" mesh="link6" />
                   <body name="tool" pos="0 0 0" gravcomp="1">
                     <inertial pos="0 0 0.09" mass="0.60" diaginertia="0.0012 0.0012 0.0004" />
-                    <geom name="px6d" type="cylinder" size="0.0375 0.02" pos="0 0 0.03" rgba="0.15 0.15 0.15 1" group="1" />
-                    <geom name="r8_adapter" type="box" size="0.045 0.03 0.03" pos="0 0 0.08" rgba="0.25 0.25 0.25 1" group="1" />
-                    <geom name="rail" type="box" size="0.02 0.065 0.012" pos="0 0 0.122" rgba="0.6 0.6 0.62 1" group="1" />
+                    <geom name="px6d" type="cylinder" size="0.0375 0.02" pos="0 0 0.03" rgba="0.15 0.15 0.15 1" group="3" />
+                    <geom name="r8_adapter" type="box" size="0.045 0.03 0.03" pos="0 0 0.08" rgba="0.25 0.25 0.25 1" group="3" />
+                    <geom name="rail" type="box" size="0.02 0.065 0.012" pos="0 0 0.122" rgba="0.6 0.6 0.62 1" group="3" />
                     <body name="finger_left" pos="0 0.0090 0" gravcomp="1">
                       <joint name="finger_left_slide" type="slide" axis="0 1 0" range="0 0.0420" damping="5" armature="0.01" actuatorgravcomp="true" />
                       <inertial pos="0 0 0.1870" mass="0.08" diaginertia="2e-5 2e-5 5e-6" />
-                      <geom name="finger_left_geom" type="box" size="0.0125 0.009 0.0530" pos="0 0 0.1870" rgba="0.85 0.85 0.85 1" friction="1.2 0.01 0.001" condim="4" solref="0.008 1" solimp="0.95 0.99 0.001" />
+                      <geom name="finger_left_geom" type="box" size="0.0125 0.009 0.0530" pos="0 0 0.1870" rgba="0.85 0.85 0.85 1" friction="1.2 0.01 0.001" group="3" condim="4" solref="0.008 1" solimp="0.95 0.99 0.001" />
+                      <geom type="mesh" mesh="tool_vis_finger_left_finger_cnc" rgba="0.72 0.76 0.73 1" group="1" contype="0" conaffinity="0" />
+                      <geom type="mesh" mesh="tool_vis_finger_left_finger_connector" rgba="0.2 0.65 0.8 1" group="1" contype="0" conaffinity="0" />
+                      <geom type="mesh" mesh="tool_vis_finger_left_finger_w2l" rgba="0.76 0.79 0.82 1" group="1" contype="0" conaffinity="0" />
                     </body>
                     <body name="finger_right" pos="0 -0.0090 0" gravcomp="1">
                       <joint name="finger_right_slide" type="slide" axis="0 -1 0" range="0 0.0420" damping="5" armature="0.01" actuatorgravcomp="true" />
                       <inertial pos="0 0 0.1870" mass="0.08" diaginertia="2e-5 2e-5 5e-6" />
-                      <geom name="finger_right_geom" type="box" size="0.0125 0.009 0.0530" pos="0 0 0.1870" rgba="0.85 0.85 0.85 1" friction="1.2 0.01 0.001" condim="4" solref="0.008 1" solimp="0.95 0.99 0.001" />
+                      <geom name="finger_right_geom" type="box" size="0.0125 0.009 0.0530" pos="0 0 0.1870" rgba="0.85 0.85 0.85 1" friction="1.2 0.01 0.001" group="3" condim="4" solref="0.008 1" solimp="0.95 0.99 0.001" />
+                      <geom type="mesh" mesh="tool_vis_finger_right_finger_cnc" rgba="0.72 0.76 0.73 1" group="1" contype="0" conaffinity="0" />
+                      <geom type="mesh" mesh="tool_vis_finger_right_finger_connector" rgba="0.2 0.65 0.8 1" group="1" contype="0" conaffinity="0" />
+                      <geom type="mesh" mesh="tool_vis_finger_right_finger_w2l" rgba="0.76 0.79 0.82 1" group="1" contype="0" conaffinity="0" />
                     </body>
                     <site name="tcp" pos="0 0 0.2200" size="0.006" rgba="1 0 0 0.6" group="2" />
                     <site name="fingertip" pos="0 0 0.2400" size="0.004" rgba="0 1 0 0.6" group="2" />
+                    <geom type="mesh" mesh="tool_vis_tool_d405_camera" rgba="0.15 0.22 0.27 1" group="1" contype="0" conaffinity="0" />
+                    <geom type="mesh" mesh="tool_vis_tool_d405_mount" rgba="0.8 0.57 0.18 1" group="1" contype="0" conaffinity="0" />
+                    <geom type="mesh" mesh="tool_vis_tool_gripper_cnc" rgba="0.72 0.76 0.73 1" group="1" contype="0" conaffinity="0" />
+                    <geom type="mesh" mesh="tool_vis_tool_gripper_green" rgba="0.725 0.835 0.118 1" group="1" contype="0" conaffinity="0" />
+                    <geom type="mesh" mesh="tool_vis_tool_gripper_motor" rgba="0.045 0.052 0.049 1" group="1" contype="0" conaffinity="0" />
+                    <geom type="mesh" mesh="tool_vis_tool_plate_a" rgba="0.722 0.533 0.318 1" group="1" contype="0" conaffinity="0" />
+                    <geom type="mesh" mesh="tool_vis_tool_plate_b" rgba="0.427 0.549 0.671 1" group="1" contype="0" conaffinity="0" />
+                    <geom type="mesh" mesh="tool_vis_tool_px6d" rgba="0.62 0.64 0.68 1" group="1" contype="0" conaffinity="0" />
+                    <geom type="mesh" mesh="tool_vis_tool_screws" rgba="0.32 0.34 0.37 1" group="1" contype="0" conaffinity="0" />
+                    <geom type="mesh" mesh="tool_vis_tool_stator" rgba="0.6 0.63 0.66 1" group="1" contype="0" conaffinity="0" />
                   </body>
                 </body>
               </body>

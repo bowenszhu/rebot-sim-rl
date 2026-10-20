@@ -320,7 +320,9 @@ class B601T1Env(gym.Env):
     def render(self):
         if self._renderer is None:
             self._renderer = mujoco.Renderer(self.model, self._wh[1], self._wh[0])
-        self._renderer.update_scene(self.data, camera=self.camera)
+        opt = mujoco.MjvOption()
+        opt.sitegroup[:] = 0  # hide the TCP / box-centre debug sites
+        self._renderer.update_scene(self.data, camera=self.camera, scene_option=opt)
         return self._renderer.render()
 
     def close(self):

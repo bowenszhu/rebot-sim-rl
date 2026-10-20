@@ -15,6 +15,12 @@ Third-party material, not covered by these licences:
   tools/fetch_meshes.sh come from the public repository Yang-Ci/ReBot_Arm_DigitalTwin_RS
   (formerly ReBot_Arm_web_RS) at d289fa7, itself based on LAN-GER/reBot-B601-RS-for-mujoco_sim.
   assets/b601/b601_t1_scene.xml is generated from them by tools/build_scene.py.
+- assets/b601/tool_visual/ draws the installed end effector for pictures only; it contains
+  simplified meshes of the vendors' publicly downloadable PX6D (PaXini) and DM-Tac W2L CAD and
+  of an Intel RealSense D405 envelope, besides parts designed by Bowen Zhu (R8 plates, fingertip
+  connectors, D405 mount; the mount is published separately at
+  https://github.com/bowenszhu/rebot-b601-rs-d405-wrist-mount under its own licence) and parts
+  derived from the upstream meshes.
 - The LIBERO results evaluate public checkpoints (HuggingFaceVLA/smolvla_libero,
   lerobot/pi05_libero_finetuned) under their own licences; no weights are included.
 Product names (Seeed Studio reBot, PX6D, DM-Tac W2L, G-Research on the foam cube) belong to

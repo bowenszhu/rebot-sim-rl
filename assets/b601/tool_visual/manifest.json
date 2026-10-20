@@ -1,0 +1,165 @@
+{
+ "source": "reBot CAD context setup_20260924 (robot_context.json), state 0",
+ "parts": [
+  {
+   "file": "finger_left_finger_cnc.stl",
+   "body": "finger_left",
+   "rgba": [
+    0.72,
+    0.76,
+    0.73,
+    1
+   ]
+  },
+  {
+   "file": "finger_left_finger_connector.stl",
+   "body": "finger_left",
+   "rgba": [
+    0.2,
+    0.65,
+    0.8,
+    1
+   ]
+  },
+  {
+   "file": "finger_left_finger_w2l.stl",
+   "body": "finger_left",
+   "rgba": [
+    0.76,
+    0.79,
+    0.82,
+    1
+   ]
+  },
+  {
+   "file": "finger_right_finger_cnc.stl",
+   "body": "finger_right",
+   "rgba": [
+    0.72,
+    0.76,
+    0.73,
+    1
+   ]
+  },
+  {
+   "file": "finger_right_finger_connector.stl",
+   "body": "finger_right",
+   "rgba": [
+    0.2,
+    0.65,
+    0.8,
+    1
+   ]
+  },
+  {
+   "file": "finger_right_finger_w2l.stl",
+   "body": "finger_right",
+   "rgba": [
+    0.76,
+    0.79,
+    0.82,
+    1
+   ]
+  },
+  {
+   "file": "tool_d405_camera.stl",
+   "body": "tool",
+   "rgba": [
+    0.15,
+    0.22,
+    0.27,
+    1
+   ]
+  },
+  {
+   "file": "tool_d405_mount.stl",
+   "body": "tool",
+   "rgba": [
+    0.8,
+    0.57,
+    0.18,
+    1
+   ]
+  },
+  {
+   "file": "tool_gripper_cnc.stl",
+   "body": "tool",
+   "rgba": [
+    0.72,
+    0.76,
+    0.73,
+    1
+   ]
+  },
+  {
+   "file": "tool_gripper_green.stl",
+   "body": "tool",
+   "rgba": [
+    0.725,
+    0.835,
+    0.118,
+    1
+   ]
+  },
+  {
+   "file": "tool_gripper_motor.stl",
+   "body": "tool",
+   "rgba": [
+    0.045,
+    0.052,
+    0.049,
+    1
+   ]
+  },
+  {
+   "file": "tool_plate_a.stl",
+   "body": "tool",
+   "rgba": [
+    0.722,
+    0.533,
+    0.318,
+    1
+   ]
+  },
+  {
+   "file": "tool_plate_b.stl",
+   "body": "tool",
+   "rgba": [
+    0.427,
+    0.549,
+    0.671,
+    1
+   ]
+  },
+  {
+   "file": "tool_px6d.stl",
+   "body": "tool",
+   "rgba": [
+    0.62,
+    0.64,
+    0.68,
+    1
+   ]
+  },
+  {
+   "file": "tool_screws.stl",
+   "body": "tool",
+   "rgba": [
+    0.32,
+    0.34,
+    0.37,
+    1
+   ]
+  },
+  {
+   "file": "tool_stator.stl",
+   "body": "tool",
+   "rgba": [
+    0.6,
+    0.63,
+    0.66,
+    1
+   ]
+  }
+ ]
+}

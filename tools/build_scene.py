@@ -37,6 +37,29 @@ TOOL_LEN = 0.24  # J6 flange to fingertip (m)
 MAX_GAP = 0.084  # inner finger gap at full opening (m)
 
 
+def add_tool_visuals(root, tool):
+    """Draw the installed end effector from real CAD (tools/build_tool_visuals.py), display only.
+
+    The parts hang on the tool and finger bodies, which carry explicit inertials, and have
+    contype/conaffinity 0, so mass, contacts and dynamics are unchanged. The stock J6 rotor in the
+    upstream link6 visual was removed on the real arm, so that visual is replaced by the stator part."""
+    manifest_path = ROOT / "assets/b601/tool_visual/manifest.json"
+    if not manifest_path.exists():
+        return
+    link6 = next(b for b in root.iter("body") if b.get("name") == "link6")
+    for g in list(link6.findall("geom")):
+        if g.get("mesh") == "link6" and g.get("group") == "1":
+            link6.remove(g)
+    asset = root.find("asset")
+    bodies = {b.get("name"): b for b in root.iter("body")}
+    for part in json.loads(manifest_path.read_text())["parts"]:
+        name = "tool_vis_" + part["file"][:-4]
+        ET.SubElement(asset, "mesh", name=name, file="../tool_visual/" + part["file"])
+        body = tool if part["body"] == "tool" else bodies[part["body"]]
+        ET.SubElement(body, "geom", type="mesh", mesh=name, rgba=" ".join(map(str, part["rgba"])),
+                      group="1", contype="0", conaffinity="0")
+
+
 def build(limits: dict, layout: dict) -> str:
     tree = ET.parse(ROOT / "assets/b601/rs_arm_upstream.xml")
     root = tree.getroot()
@@ -61,14 +84,14 @@ def build(limits: dict, layout: dict) -> str:
     tool = ET.SubElement(link6, "body", name="tool", pos="0 0 0", gravcomp="1")
     ET.SubElement(tool, "inertial", pos="0 0 0.09", mass="0.60",
                   diaginertia="0.0012 0.0012 0.0004")
-    # PX6D force sensor + R8 adapter (visual + coarse collision)
+    # PX6D force sensor + R8 adapter, finger rail: coarse collision shapes (group 3, not drawn;
+    # the real parts are drawn from assets/b601/tool_visual, see add_tool_visuals)
     ET.SubElement(tool, "geom", name="px6d", type="cylinder", size="0.0375 0.02",
-                  pos="0 0 0.03", rgba="0.15 0.15 0.15 1", group="1")
+                  pos="0 0 0.03", rgba="0.15 0.15 0.15 1", group="3")
     ET.SubElement(tool, "geom", name="r8_adapter", type="box", size="0.045 0.03 0.03",
-                  pos="0 0 0.08", rgba="0.25 0.25 0.25 1", group="1")
-    # finger rail housing
+                  pos="0 0 0.08", rgba="0.25 0.25 0.25 1", group="3")
     ET.SubElement(tool, "geom", name="rail", type="box", size="0.02 0.065 0.012",
-                  pos="0 0 0.122", rgba="0.6 0.6 0.62 1", group="1")
+                  pos="0 0 0.122", rgba="0.6 0.6 0.62 1", group="3")
     finger_len = TOOL_LEN - 0.134
     fz = 0.134 + finger_len / 2
     for side, sgn in (("left", 1.0), ("right", -1.0)):
@@ -82,13 +105,13 @@ def build(limits: dict, layout: dict) -> str:
         # W2L fingertip pad: 2.5 cm wide, 1.8 cm thick, inner face at y = +-0 gap/2
         ET.SubElement(fb, "geom", name=f"finger_{side}_geom", type="box",
                       size=f"0.0125 0.009 {finger_len / 2:.4f}", pos=f"0 0 {fz:.4f}",
-                      rgba="0.85 0.85 0.85 1", friction="1.2 0.01 0.001",
+                      rgba="0.85 0.85 0.85 1", friction="1.2 0.01 0.001", group="3",
                       condim="4", solref="0.008 1", solimp="0.95 0.99 0.001")
     ET.SubElement(tool, "site", name="tcp", pos=f"0 0 {TOOL_LEN - 0.02:.4f}",
                   size="0.006", rgba="1 0 0 0.6", group="2")
     ET.SubElement(tool, "site", name="fingertip", pos=f"0 0 {TOOL_LEN:.4f}",
                   size="0.004", rgba="0 1 0 0.6", group="2")
-    # make the arm visual meshes visible in group 1 only (upstream already does this)
+    add_tool_visuals(root, tool)
     # --- equality: the two fingers move symmetrically ------------------------
     for e in list(root.findall("equality")):
         root.remove(e)
@@ -119,9 +142,10 @@ def build(limits: dict, layout: dict) -> str:
     ET.SubElement(vis, "global", azimuth="150", elevation="-25", offwidth="960",
                   offheight="720")
     asset = root.find("asset")
-    ET.SubElement(asset, "texture", type="2d", name="wood", builtin="flat",
-                  rgb1="0.55 0.42 0.30", width="64", height="64")
-    ET.SubElement(asset, "material", name="table_mat", texture="wood", rgba="0.75 0.62 0.48 1")
+    ET.SubElement(asset, "texture", type="skybox", builtin="gradient", rgb1="0.94 0.95 0.94",
+                  rgb2="0.80 0.83 0.85", width="256", height="1536")
+    ET.SubElement(asset, "material", name="table_mat", rgba="0.55 0.58 0.61 1", specular="0.1",
+                  shininess="0.1")
     ET.SubElement(asset, "material", name="mat_white", rgba="0.95 0.95 0.95 1")
     ET.SubElement(asset, "material", name="cube_blue", rgba="0.10 0.30 0.85 1")
     ET.SubElement(asset, "material", name="box_white", rgba="0.92 0.92 0.88 1")
