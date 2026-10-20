@@ -1,0 +1,172 @@
+{
+  "per_task": [
+    {
+      "task_group": "libero_10",
+      "task_id": 8,
+      "metrics": {
+        "sum_rewards": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_rewards": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "successes": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "video_paths": [
+          "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_0.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_1.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_2.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_3.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_4.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_5.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_6.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_7.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_8.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_9.mp4"
+        ]
+      }
+    },
+    {
+      "task_group": "libero_10",
+      "task_id": 9,
+      "metrics": {
+        "sum_rewards": [
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "max_rewards": [
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "successes": [
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          false,
+          true,
+          true
+        ],
+        "video_paths": [
+          "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_0.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_1.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_2.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_3.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_4.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_5.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_6.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_7.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_8.mp4",
+          "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_9.mp4"
+        ]
+      }
+    }
+  ],
+  "per_group": {
+    "libero_10": {
+      "avg_sum_reward": 0.3,
+      "avg_max_reward": 0.3,
+      "pc_success": 30.0,
+      "n_episodes": 20,
+      "video_paths": [
+        "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_0.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_1.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_2.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_3.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_4.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_5.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_6.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_7.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_8.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_9.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_0.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_1.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_2.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_3.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_4.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_5.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_6.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_7.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_8.mp4",
+        "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_9.mp4"
+      ]
+    }
+  },
+  "overall": {
+    "avg_sum_reward": 0.3,
+    "avg_max_reward": 0.3,
+    "pc_success": 30.0,
+    "n_episodes": 20,
+    "eval_s": 3158.6530368328094,
+    "eval_ep_s": 157.93265187740326,
+    "video_paths": [
+      "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_0.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_1.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_2.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_3.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_4.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_5.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_6.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_7.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_8.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_8/eval_episode_9.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_0.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_1.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_2.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_3.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_4.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_5.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_6.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_7.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_8.mp4",
+      "runs/smolvla_libero_10_shard4/videos/libero_10_9/eval_episode_9.mp4"
+    ]
+  }
+}

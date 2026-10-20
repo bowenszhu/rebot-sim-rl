@@ -1,0 +1,170 @@
+{
+ "smolvla/libero_spatial": {
+  "successes": 82,
+  "episodes": 100,
+  "wilson95": [
+   0.733,
+   0.883
+  ],
+  "per_task_successes": [
+   8,
+   10,
+   5,
+   10,
+   9,
+   5,
+   8,
+   8,
+   10,
+   9
+  ],
+  "published_pct": 90
+ },
+ "smolvla/libero_object": {
+  "successes": 95,
+  "episodes": 100,
+  "wilson95": [
+   0.888,
+   0.978
+  ],
+  "per_task_successes": [
+   8,
+   10,
+   10,
+   10,
+   9,
+   9,
+   10,
+   10,
+   10,
+   9
+  ],
+  "published_pct": 96
+ },
+ "smolvla/libero_goal": {
+  "successes": 73,
+  "episodes": 100,
+  "wilson95": [
+   0.636,
+   0.807
+  ],
+  "per_task_successes": [
+   8,
+   10,
+   9,
+   3,
+   4,
+   8,
+   6,
+   10,
+   7,
+   8
+  ],
+  "published_pct": 92
+ },
+ "smolvla/libero_10": {
+  "successes": 45,
+  "episodes": 100,
+  "wilson95": [
+   0.356,
+   0.548
+  ],
+  "per_task_successes": [
+   4,
+   4,
+   5,
+   8,
+   2,
+   8,
+   8,
+   0,
+   0,
+   6
+  ],
+  "published_pct": 71
+ },
+ "pi05/libero_spatial": {
+  "successes": 99,
+  "episodes": 100,
+  "wilson95": [
+   0.946,
+   0.998
+  ],
+  "per_task_successes": [
+   10,
+   10,
+   10,
+   10,
+   10,
+   9,
+   10,
+   10,
+   10,
+   10
+  ],
+  "published_pct": 97.0
+ },
+ "pi05/libero_object": {
+  "successes": 100,
+  "episodes": 100,
+  "wilson95": [
+   0.963,
+   1.0
+  ],
+  "per_task_successes": [
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10
+  ],
+  "published_pct": 99.0
+ },
+ "pi05/libero_goal": {
+  "successes": 100,
+  "episodes": 100,
+  "wilson95": [
+   0.963,
+   1.0
+  ],
+  "per_task_successes": [
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10
+  ],
+  "published_pct": 98.0
+ },
+ "pi05/libero_10": {
+  "successes": 100,
+  "episodes": 100,
+  "wilson95": [
+   0.963,
+   1.0
+  ],
+  "per_task_successes": [
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10
+  ],
+  "published_pct": 96.0
+ }
+}
