@@ -1,0 +1,13 @@
+{
+ "frame": "B601 base frame: origin on the J1 axis at table height, x forward, +y = arm's left (same as configs/t1_layout.json)",
+ "how_to_measure": "mark each point with tape; measure x and y from the base axis with a ruler (+-0.5 cm); z = 0 for points on the table",
+ "points": [
+  {"name": "A1", "xyz_m": [0.340, 0.211, 0.0]},
+  {"name": "A3", "xyz_m": [0.354, 0.041, 0.0]},
+  {"name": "B2", "xyz_m": [0.398, 0.123, 0.0]},
+  {"name": "C1", "xyz_m": [0.442, 0.196, 0.0]},
+  {"name": "C3", "xyz_m": [0.456, 0.044, 0.0]},
+  {"name": "BOX_C", "xyz_m": [0.380, -0.220, 0.0]}
+ ],
+ "note": "values are the pilot reach-check estimates (+-2 cm); replace with fresh tape measurements before analysis"
+}
