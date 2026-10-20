@@ -1,0 +1,21 @@
+rebot-sim-rl
+Copyright 2026 Bowen Zhu
+
+Code (rebot_sim_rl/, scripts/, tools/, sim2real/, cluster/, experiments/) is licensed under the
+Apache License, Version 2.0 (LICENSE). It uses MuJoCo, Gymnasium, Stable-Baselines3 and PyTorch
+as dependencies and, for the LIBERO evaluation, LeRobot and hf-libero; no third-party source is
+copied into this repository.
+
+Results (results/), configs (configs/) and the recorded joint traces (data/) are licensed under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0,
+https://creativecommons.org/licenses/by/4.0/).
+
+Third-party material, not covered by these licences:
+- assets/b601/rs_arm_upstream.xml, rs_grasp_scene_upstream.xml and the STL meshes fetched by
+  tools/fetch_meshes.sh come from the public repository Yang-Ci/ReBot_Arm_DigitalTwin_RS
+  (formerly ReBot_Arm_web_RS) at d289fa7, itself based on LAN-GER/reBot-B601-RS-for-mujoco_sim.
+  assets/b601/b601_t1_scene.xml is generated from them by tools/build_scene.py.
+- The LIBERO results evaluate public checkpoints (HuggingFaceVLA/smolvla_libero,
+  lerobot/pi05_libero_finetuned) under their own licences; no weights are included.
+Product names (Seeed Studio reBot, PX6D, DM-Tac W2L, G-Research on the foam cube) belong to
+their owners.
